@@ -1,47 +1,172 @@
-# ALSO Microsoft Security Conditional Access policy templates
-
-Conditional Access templates are organized in license folders  
-
-Name structure are following
-
-Example: Minimum license required-ALSO-CA000--Persona-TypeOfProtection-Apps-Platforms-GrantorBlock-Actions
-
-**ALSO**- Company providing policy
-**CA000**- Number of policy
-**Minimum license required**- Minimum license required to use policy
-
-**BP**- Business Premium
-**E5** - Defender Suite or Microsoft 365 E5
-**E7**- Microsoft 365 E7
-**A365** - Agent 365 stand alone license 
-
-**Persona**: 
-
-  **Global**: Policies that apply broadly to all personas or cover scenarios that are not specific to another persona.
-- **Admins**: Non-guest cloud or synchronized identities assigned Microsoft Entra ID or Microsoft 365 administrative roles.
-- **Internals**: Employees with accounts in the tenant who work in standard end-user roles.
-- **Guests**: External users invited to the tenant with Microsoft Entra B2B guest accounts.
-- **Agents**: Agent identities and agent-related resources that can be governed by Conditional Access.
- 
-**TypeOfProtection**
-
-Identity Protection, App Protection, Attack Surface Reduction, Base Protection
-
-""Apps""
-
-Apps scoped to the conditional access template policy - AllApps, Selected Apps
-
-""Platforms**
-
-Platform scoped to the conditional access template policy- AllPlatforms, Windows, MacOS etc
-
-**GrantOrBlock**
-
-Grants access or blocks access 
-
-**Actions** 
-
-Which actions are taken in the policy for example RequirePhishingResistantMFA, ComoliantDevice, DisablePersistantBrowser
+# ALSO Microsoft Security Conditional Access Policy Templates
+ 
+A collection of Microsoft Entra Conditional Access policy templates designed by ALSO to help organizations accelerate secure deployments and implement Microsoft Security best practices.
+ 
+---
+ 
+## 📂 Repository Structure
+ 
+Conditional Access templates are organized by the **minimum required license**.
+ 
+```text
+/
+├── BP/
+├── E5/
+├── E7/
+└── A365/
+```
+ 
+| Folder | Description |
+|----------|-------------|
+| BP | Microsoft 365 Business Premium |
+| E5 | Microsoft Defender Suite or Microsoft 365 E5 |
+| E7 | Microsoft 365 E7 |
+| A365 | Agent 365 Standalone |
+ 
+---
+ 
+## 📖 Naming Convention
+ 
+All policy templates follow the naming format below:
+ 
+```text
+<MinimumLicense>-ALSO-CA###-<Persona>-<TypeOfProtection>-<Apps>-<Platforms>-<GrantOrBlock>-<Actions>
+```
+ 
+### Example
+ 
+```text
+E5-ALSO-CA001-Admins-IdentityProtection-AllApps-AllPlatforms-Grant-RequirePhishingResistantMFA
+```
+ 
+---
+ 
+## 🧩 Naming Components
+ 
+| Component | Description |
+|------------|------------|
+| MinimumLicense | Minimum Microsoft license required to use the policy |
+| ALSO | Company providing the policy template |
+| CA### | Unique Conditional Access policy number |
+| Persona | Target user persona |
+| TypeOfProtection | Security category of the policy |
+| Apps | Applications targeted by the policy |
+| Platforms | Platforms targeted by the policy |
+| GrantOrBlock | Determines whether access is granted or blocked |
+| Actions | Controls enforced by the policy |
+ 
+---
+ 
+# 🎫 License Types
+ 
+| Code | License |
+|------|----------|
+| BP | Microsoft 365 Business Premium |
+| E5 | Microsoft Defender Suite or Microsoft 365 E5 |
+| E7 | Microsoft 365 E7 |
+| A365 | Agent 365 Standalone |
+ 
+---
+ 
+# 👥 Personas
+ 
+## Global
+ 
+Policies that apply broadly to all personas or cover scenarios that are not specific to another persona.
+ 
+## Admins
+ 
+Non-guest cloud or synchronized identities assigned Microsoft Entra ID or Microsoft 365 administrative roles.
+ 
+## Internals
+ 
+Employees with accounts in the tenant who work in standard end-user roles.
+ 
+## Guests
+ 
+External users invited to the tenant using Microsoft Entra B2B guest accounts.
+ 
+## Agents
+ 
+Agent identities and agent-related resources governed through Conditional Access.
+ 
+---
+ 
+# 🛡️ Protection Types
+ 
+| Type | Description |
+|--------|------------|
+| Base Protection | Foundational security controls |
+| Identity Protection | Protection against identity-based threats |
+| App Protection | Protection of cloud applications and access |
+| Attack Surface Reduction | Reduction of exposed attack vectors and risky behavior |
+ 
+---
+ 
+# 📱 Application Scope
+ 
+Defines which applications the Conditional Access policy targets.
+ 
+### Examples
+ 
+```text
+AllApps
+SelectedApps
+ExchangeOnline
+MicrosoftAdminPortals
+AzureManagement
+Microsoft365
+```
+ 
+---
+ 
+# 💻 Platform Scope
+ 
+Defines which device platforms the Conditional Access policy targets.
+ 
+### Examples
+ 
+```text
+AllPlatforms
+Windows
+macOS
+iOS
+Android
+Linux
+```
+ 
+---
+ 
+# 🚦 Access Decision
+ 
+Determines whether access is granted or blocked.
+ 
+| Value | Description |
+|---------|-------------|
+| Grant | Allows access when policy requirements are satisfied |
+| Block | Denies access |
+ 
+---
+ 
+# ⚙️ Actions
+ 
+Actions define which controls are applied when the Conditional Access policy is triggered.
+ 
+### Common Examples
+ 
+| Action | Description |
+|----------|------------|
+| RequirePhishingResistantMFA | Require phishing-resistant multifactor authentication |
+| RequireCompliantDevice | Require Microsoft Intune compliant device |
+| RequireHybridJoinedDevice | Require Microsoft Entra Hybrid Joined device |
+| RequireApprovedClientApp | Require approved client application |
+| RequireAuthenticationStrength | Require specific authentication strength |
+| RequireTermsOfUse | Require Terms of Use acceptance |
+| DisablePersistentBrowser | Disable persistent browser sessions |
+| RequireAppProtectionPolicy | Require app protection policy |
+| BlockLegacyAuthentication | Block legacy authentication protocols |
+| RequireTrustedNetwork | Require access from trusted network location |
+| RequirePasswordChange | Require password change upon risk detection |
 
 
 

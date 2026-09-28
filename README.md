@@ -148,25 +148,10 @@ Determines whether access is granted or blocked.
  
 ---
  
-# ⚙️ Actions
+# ⚙️ Controls
  
 Actions define which controls are applied when the Conditional Access policy is triggered.
- 
-### Common Examples
- 
-| Action | Description |
-|----------|------------|
-| RequirePhishingResistantMFA | Require phishing-resistant multifactor authentication |
-| RequireCompliantDevice | Require Microsoft Intune compliant device |
-| RequireHybridJoinedDevice | Require Microsoft Entra Hybrid Joined device |
-| RequireApprovedClientApp | Require approved client application |
-| RequireAuthenticationStrength | Require specific authentication strength |
-| RequireTermsOfUse | Require Terms of Use acceptance |
-| DisablePersistentBrowser | Disable persistent browser sessions |
-| RequireAppProtectionPolicy | Require app protection policy |
-| BlockLegacyAuthentication | Block legacy authentication protocols |
-| RequireTrustedNetwork | Require access from trusted network location |
-| RequirePasswordChange | Require password change upon risk detection |
+
 
 
 

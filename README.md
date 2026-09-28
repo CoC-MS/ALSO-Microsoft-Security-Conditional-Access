@@ -23,4 +23,4 @@ Each configuration level contains the following personas:
 - **Guests**: External users invited to the tenant with Microsoft Entra B2B guest accounts.
 - **Agents**: Agent identities and agent-related resources that can be governed by Conditional Access.
 
-The persona model is based on [j0eyv/ConditionalAccessBaseline](https://github.com/j0eyv/ConditionalAccessBaseline).
+

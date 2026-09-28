@@ -30,7 +30,7 @@ Conditional Access templates are organized by the **minimum required license**.
 All policy templates follow the naming format below:
  
 ```text
-<MinimumLicense>-ALSO-CA###-<Persona>-<TypeOfProtection>-<Apps>-<Platforms>-<GrantOrBlock>-<Actions>
+<MinimumLicense>-ALSO-CA###-<Persona>-<TypeOfProtection>-<Apps>-<Platforms>-<AccessControls>-<SessionControls>
 ```
  
 ### Example
@@ -52,8 +52,8 @@ E5-ALSO-CA001-Admins-IdentityProtection-AllApps-AllPlatforms-Grant-RequirePhishi
 | TypeOfProtection | Security category of the policy |
 | Apps | Applications targeted by the policy |
 | Platforms | Platforms targeted by the policy |
-| GrantOrBlock | Determines whether access is granted or blocked |
-| Actions | Controls enforced by the policy |
+| AccessControls | Determines whether access is granted or blocked |
+| SessionControls | Controls enforced by the policy |
  
 ---
  
@@ -89,6 +89,8 @@ External users invited to the tenant using Microsoft Entra B2B guest accounts.
 ## Agents
  
 Agent identities and agent-related resources governed through Conditional Access.
+
+
  
 ---
  
@@ -137,18 +139,18 @@ Linux
  
 ---
  
-# 🚦 Access Decision
+# 🚦 Access controls
  
 Determines whether access is granted or blocked.
  
 | Value | Description |
 |---------|-------------|
 | Grant | Allows access when policy requirements are satisfied |
-| Block | Denies access |
+| Block | Denies access when policy requirements are satisfied |
  
 ---
  
-# ⚙️ Controls
+# ⚙️ Session controls
  
 Actions define which controls are applied when the Conditional Access policy is triggered.
 

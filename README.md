@@ -6,6 +6,17 @@
 
 ---
 
+
+> [!IMPORTANT]
+> **IMPORTANT. READ THESE BEFORE YOU START IMPORTING POLICIES** : 
+
+# Security: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main?tab=security-ov-file
+
+# Conditional Access policy description: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
+
+# Before importing: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#before-importing
+
+
 ## 📂 File Structure
 
 All files are organized into categories
@@ -540,8 +551,9 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 14. Check results on your tenant and if something is missing in CMD window. 
 
 
+## Open issue
 
-
+# Open issue: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/issues/new/choose
 
 
 

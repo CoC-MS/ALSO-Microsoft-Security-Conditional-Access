@@ -8,9 +8,7 @@
 
 
 > [!IMPORTANT]
-> **⚠️ IMPORTANT: Read this before importing any policies.** : 
-
-## 🔗 Quick Navigation
+> **⚠️ IMPORTANT: Read this before importing any policies.**  
 
 | Resource | Description |
 |-----------|-------------|

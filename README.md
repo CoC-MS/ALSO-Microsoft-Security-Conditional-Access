@@ -488,7 +488,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 ## Before importing 
 
 > [!IMPORTANT]
-PLEASE ENSURE THAT YOU HAVE COMPLETED THESE STEPS BEFORE YOU START IMPORTING AS WELL AS POLICY DESCIRPTION HERE: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
+PLEASE ENSURE THAT YOU HAVE COMPLETED THESE STEPS, BEFORE YOU START IMPORTING. AND THAT YOU HAVE READ POLICY DESCIRPTION HERE: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
 
 
 1. Verify that your tenant have at least Entra ID P1 license. 
@@ -508,7 +508,7 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 ## How to import
 
 1. Download Micke M Intune Management Tool from here:  https://github.com/Micke-K/IntuneManagement
-2. Extract folder and Start with start.cmd in the folder
+2. Extract folder and Start with start.cmd in the folder (works without local administrator rights on Windows and MacOS)
    <img width="635" height="247" alt="image" src="https://github.com/user-attachments/assets/ae7405c2-17cb-43a1-a96e-cd60181a2619" />
 
 3. Command window and UI will open
@@ -517,11 +517,11 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 
 5. You may need a Global Administrator to consent to required API permissions first time if have not used these tool before. This can be done after sign-in by pressing same icon in upper right corner once more and press "Request Consent". Command Graph Command Line Tools application will be registered in Entra. Feel free to remove it after import or remove at least admin consent.
 
-<img width="342" height="177" alt="image" src="https://github.com/user-attachments/assets/7ed4361f-0888-4b49-b08e-5def9bfbf420" />
+   <img width="342" height="177" alt="image" src="https://github.com/user-attachments/assets/7ed4361f-0888-4b49-b08e-5def9bfbf420" />
 
 6. After sign in and admin consent navigate to Bulk button in the left upper corner and press Import
 
-<img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
+   <img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
 
 7. Find downloaded folder from these repo and choose it. 
 

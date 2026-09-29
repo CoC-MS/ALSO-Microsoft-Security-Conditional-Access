@@ -484,3 +484,53 @@ This policy blocks all internal users which have a high risk (signin risk) statu
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
 ```
+
+## Before importing 
+
+> [!IMPORTANT]
+PLEASE ENSURE THAT YOU HAVE COMPLETED THESE STEPS BEFORE YOU START IMPORTING AS WELL AS POLICY DESCIRPTION HERE: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
+
+
+1. Verify that your tenant have at least Entra ID P1 license. 
+
+https://entra.microsoft.com/-> Overview -> License
+
+
+2. Verify that security defaults are OFF. It can be checked here 
+
+
+https://entra.microsoft.com/-> Properties -> Security defaults
+
+
+3. You have at least Conditional Access Administrator role assigned to your user 
+
+
+## How to import
+
+1. Download Micke M Intune Management Tool from here:  https://github.com/Micke-K/IntuneManagement
+2. Extract folder and Start with start.cmd in the folder
+   <img width="635" height="247" alt="image" src="https://github.com/user-attachments/assets/ae7405c2-17cb-43a1-a96e-cd60181a2619" />
+
+3. Command window and UI will open
+4. Press on icon in upper right corner to sign in
+   <img width="1311" height="965" alt="image" src="https://github.com/user-attachments/assets/2e835f79-5e07-4c7d-bd7c-5bd4976fde50" />
+
+5. You may need a Global Administrator to consent to required API permissions first time if have not used these tool before. This can be done after sign-in by pressing same icon in upper right corner once more and press "Request Consent". Command Graph Command Line Tools application will be registered in Entra. Feel free to remove it after import or remove at least admin consent.
+
+<img width="342" height="177" alt="image" src="https://github.com/user-attachments/assets/7ed4361f-0888-4b49-b08e-5def9bfbf420" />
+
+6. After sign in and admin consent navigate to Bulk button in the left upper corner and press Import
+
+<img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
+
+7. Find downloaded folder from these repo and choose it. 
+
+
+
+
+
+
+
+
+
+

@@ -8,13 +8,13 @@
 
 
 > [!IMPORTANT]
-> **IMPORTANT. READ THESE BEFORE YOU START IMPORTING POLICIES** : 
+> **⚠️ IMPORTANT: Read this before importing any policies.** : 
 
-# Security: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main?tab=security-ov-file
+Security: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main?tab=security-ov-file
 
-# Conditional Access policy description: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
+Conditional Access policy description: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
 
-# Before importing: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#before-importing
+Before importing: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#before-importing
 
 
 ## 📂 File Structure

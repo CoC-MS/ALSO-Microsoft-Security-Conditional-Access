@@ -553,7 +553,7 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 
 ## Open issue
 
-# Open issue: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/issues/new/choose
+Open issue: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/issues/new/choose
 
 
 

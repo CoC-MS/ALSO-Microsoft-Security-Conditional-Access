@@ -38,7 +38,7 @@ All policy templates follow the naming format below:
 ### Example
 
 ```text
-E5-ALSO-CA001-Admins-AllApps-AllPlatforms-Grant-RequirePhishingResistantMFA
+BP-ALSO-CA001-Admins-AllApps-AllPlatforms-Grant-RequirePhishingResistantMFA
 ```
 
 ---

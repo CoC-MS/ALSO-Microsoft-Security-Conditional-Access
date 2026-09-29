@@ -521,7 +521,7 @@ https://entra.microsoft.com/ -> Properties -> Security defaults
 ## How to import
 
 1. Download Micke M Intune Management Tool from here:  https://github.com/Micke-K/IntuneManagement
-2. Extract folder and Start with start.cmd in the folder (works without local administrator rights on Windows and MacOS)
+2. Extract folder and Start with start.cmd in the folder (works without local administrator rights on Windows and MacOS)   
    <img width="635" height="247" alt="image" src="https://github.com/user-attachments/assets/ae7405c2-17cb-43a1-a96e-cd60181a2619" />
 
 3. Command window and UI will open

@@ -6,9 +6,9 @@
 
 ---
 
-## 📂 Repository Structure
+## 📂 File Structure
 
-Conditional Access templates are organized by the **minimum required license**.
+All files are organized into categories
 
 ```text
 /

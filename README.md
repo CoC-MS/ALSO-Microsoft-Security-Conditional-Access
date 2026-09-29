@@ -506,13 +506,13 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 1. Verify that your tenant have at least Entra ID P1 license. 
 
-https://entra.microsoft.com/-> Overview -> License
+https://entra.microsoft.com/ -> Overview -> License
 
 
 2. Verify that security defaults are OFF. It can be checked here 
 
 
-https://entra.microsoft.com/-> Properties -> Security defaults
+https://entra.microsoft.com/ -> Properties -> Security defaults
 
 
 3. You have at least Conditional Access Administrator role assigned to your user 

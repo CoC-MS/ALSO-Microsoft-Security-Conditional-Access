@@ -520,17 +520,23 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 
 5. You may need a Global Administrator to consent to required API permissions first time if have not used these tool before. This can be done after sign-in by pressing same icon in upper right corner once more and press "Request Consent". Command Graph Command Line Tools application will be registered in Entra. Feel free to remove it after import or remove at least admin consent.
 
-   <img width="342" height="177" alt="image" src="https://github.com/user-attachments/assets/7ed4361f-0888-4b49-b08e-5def9bfbf420" />
+   <img width="294" height="145" alt="image" src="https://github.com/user-attachments/assets/675ebdc9-dc87-4633-bfa5-fbb92f7ba53d" />
+
 
 6. After sign in and admin consent navigate to Bulk button in the left upper corner and press Import
 
    <img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
 
-7. Find downloaded and extracted folder from this repo and choose Config folder.
-8. Choose Conditional Access, Named Locations and Authentication context in menu, remove everything else.
-9. Choose Conditional Access state: OFF. Very important.
-10. Uncheck import assignments if you don't want to to import groups, named locations and authentication context. PS: Many policies will fail on import here. 
-11. Check results on your tenant and if something is missing in CMD window. 
+7. Find downloaded and extracted folder from this repo and choose CA ALSO folder.
+   
+9. Choose Conditional Access, Named Locations and Authentication context in menu, remove everything else.
+    
+> [!IMPORTANT]   
+11. On Conditional Access state: OFF. Very important.
+
+12. Uncheck import assignments if you don't want to to import groups, named locations and authentication context. PS: Many policies will fail on import here.
+
+14. Check results on your tenant and if something is missing in CMD window. 
 
 
 

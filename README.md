@@ -523,8 +523,11 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 
    <img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
 
-7. Find downloaded and extracted folder from this repo and choose it.
-8. Check results on your tenant and if something is missing in CMD window. 
+7. Find downloaded and extracted folder from this repo and choose Config folder.
+8. Choose Conditional Access, Named Locations and Authentication context in menu, remove everything else.
+9. Choose Conditional Access state: OFF. Very important.
+10. Uncheck import assignments if you don't want to to import groups, named locations and authentication context. PS: Many policies will fail on import here. 
+11. Check results on your tenant and if something is missing in CMD window. 
 
 
 

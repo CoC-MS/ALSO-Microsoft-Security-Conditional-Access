@@ -491,7 +491,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 ## Before importing 
 
 > [!IMPORTANT]
-PLEASE ENSURE THAT YOU HAVE COMPLETED THESE STEPS, BEFORE YOU START IMPORTING. AND THAT YOU HAVE READ POLICY DESCIRPTION HERE: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
+> **PLEASE ENSURE THAT YOU HAVE COMPLETED THESE STEPS, BEFORE YOU START IMPORTING. AND THAT YOU HAVE READ POLICY DESCIRPTION HERE**: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies
 
 
 1. Verify that your tenant have at least Entra ID P1 license. 
@@ -530,9 +530,10 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 7. Download CA ALSO.zip from this repo https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/blob/main/CA%20ALSO.zip, find and extract folder and choose CA ALSO folder.
    
 9. Choose Conditional Access, Named Locations and Authentication context in menu, remove everything else.
-    
-> [!IMPORTANT]   
-11. On Conditional Access state- SELECT OFF. Very important.
+
+> [!IMPORTANT]
+> **11. On Conditional Access state- SELECT OFF. Very important.**
+ 
 
 12. Uncheck import assignments if you don't want to to import groups, named locations and authentication context. PS: Many policies will fail on import here.
 

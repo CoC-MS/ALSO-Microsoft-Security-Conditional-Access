@@ -523,7 +523,8 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 
    <img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
 
-7. Find downloaded folder from these repo and choose it. 
+7. Find downloaded and extracted folder from this repo and choose it.
+8. Check results on your tenant and if something is missing in CMD window. 
 
 
 

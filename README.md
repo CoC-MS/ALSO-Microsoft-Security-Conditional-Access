@@ -168,13 +168,13 @@ Prevents agent identities from accessing tenant resources when Microsoft identif
 
 ### A365-ALSO-CA502-Agents-AllAgentIdentities-AllAgentResources-Block-AllExceptSelected
 
-Denies access for all agent identities by default. Only explicitly approved or excluded agents are permitted. Agent approval can also be managed through the Agent 365 portal This can also be controlled in Agent 365 portal.
+Denies access for all agent identities by default. Only explicitly approved or excluded agents are permitted. Agent approval can also be managed through the Agent 365 portal 
 
 ---
 
 ### A365-ALSO-CA503-Agents-AllAgentUsers-Grant-RequireCompliantDevice
 
-Restricts agent user access to devices that meet organizational compliance requirements..
+Restricts agent user access to devices that meet organizational compliance requirements.
 
 ---
 

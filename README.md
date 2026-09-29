@@ -12,9 +12,12 @@ Conditional Access templates are organized by the **minimum required license**.
 
 ```text
 /
-├── BP/
-├── E5/
-└── A365/
+├── CA ALSO/
+├── AuthenticationContext
+└── ConditionalAccess
+└── Groups
+└── NamedLocations
+└── MigrationTable.json
 ```
 
 ### License Tag Description

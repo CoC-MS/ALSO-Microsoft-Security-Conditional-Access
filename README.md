@@ -527,7 +527,7 @@ https://entra.microsoft.com/-> Properties -> Security defaults
 
    <img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
 
-7. Find downloaded and extracted folder from this repo and choose CA ALSO folder.
+7. Download CA ALSO.zip from this repo, find and extract folder and choose CA ALSO folder.
    
 9. Choose Conditional Access, Named Locations and Authentication context in menu, remove everything else.
     

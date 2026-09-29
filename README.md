@@ -162,31 +162,31 @@ Actions define which controls are applied when the Conditional Access policy is 
 
 ### A365-ALSO-CA501-Agents-AllApps-AnyPlatform-Block-HighRiskAgent
 
-This policy blocks agent identities with a high risk level from accessing resources in your tenant.
+Prevents agent identities from accessing tenant resources when Microsoft identifies the agent as having a high risk level
 
 ---
 
 ### A365-ALSO-CA502-Agents-AllAgentIdentities-AllAgentResources-Block-AllExceptSelected
 
-By default, this policy prevents all agent identities from being used. Only agents that have been specifically excluded (approved) are allowed to be used. This can also be controlled in Agent 365 portal.
+Denies access for all agent identities by default. Only explicitly approved or excluded agents are permitted. Agent approval can also be managed through the Agent 365 portal This can also be controlled in Agent 365 portal.
 
 ---
 
 ### A365-ALSO-CA503-Agents-AllAgentUsers-Grant-RequireCompliantDevice
 
-This policy blocks access for all Agent Users from non-compliant devices.
+Restricts agent user access to devices that meet organizational compliance requirements..
 
 ---
 
 ### A365-ALSO-CA504-Agents-AllAgentUsers-AllResources-Block-RiskyAgents
 
-This policy blocks autonomous agents operating as users when Microsoft Entra ID Protection detects medium or high risk.
+Blocks agent users when Microsoft Entra ID Protection classifies the identity as medium or high risk.
 
 ---
 
 ### A365-ALSO-CA505-Agents-AllAgentUsers-AllResources-Grant-RequireCompliantNetWork
 
-This policy blocks agent user sessions from all locations except those compliant with the Global Secure Access network.
+Allows agent user access only from locations connected through the Global Secure Access compliant network.
 
 ---
 
@@ -194,13 +194,13 @@ This policy blocks agent user sessions from all locations except those compliant
 
 ### BP-ALSO-CA000-Global-AllApps-AnyPlatform-Grant-RequireMFA
 
-This policy requires MFA for all cloud apps, from every platform. It captures all authentications in scope not captured by other MFA policies.
+Enforces multifactor authentication across all cloud applications and device platforms. Acts as a baseline MFA policy for sign-ins not covered by more specific policies.
 
 ---
 
 ### BP-ALSO-CA001-Global-AllApps-AnyPlatform-Block-ExceptWhitelListedCountries
 
-This policy blocks all countries, to all cloud apps, from every platform except for the countries configured in the named location ALSO-Whitelisted countries (NO). Norway is the only country in the scope. Remember to remove/add at your choice. PS: Named location needs to be imported, otherwise policy will fail on import with following message:
+Restricts access from all countries except those defined in the ALSO-Whitelisted Countries (NO) named location. By default, only Norway is included and should be adjusted according to business requirements PS: Named location needs to be imported, otherwise policy will fail on import with following message:
 
 ```text
 "Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: 289aa93d-2f7e-4d67-8b31-ed63349446d7). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request."
@@ -210,13 +210,13 @@ This policy blocks all countries, to all cloud apps, from every platform except 
 
 ### BP-ALSO-CA002-Global-AllApps-AnyPlatform-Block-LegacyAuthentication
 
-This policy blocks legacy authentication for all users, to all cloud apps, from any platform.
+Protects the environment by blocking legacy authentication protocols across all cloud applications
 
 ---
 
 ### BP-ALSO-CA003-Global-RegisterOrJoinDevice-AnyPlatform-Grant-RequireMFA
 
-This policy requires MFA for all users, to register or join a device to your tenant/environment.
+Requires multifactor authentication when users register or join devices to the Microsoft Entra environment
 
 > [!IMPORTANT]
 > PS: Remember to disable Require Multifactor Authentication to register or join devices with Microsoft Entra first before turning on this policy.
@@ -225,19 +225,19 @@ This policy requires MFA for all users, to register or join a device to your ten
 
 ### BP-ALSO-CA004-Globa-AllApps-AnyPlatform-Block-AuthenticationFlowsAndDeviceCodeFlow
 
-This policy prevents all users from using Device Code Flow and Authentication Transfer (preview). This is important to avoid device code phishing.
+Blocks Device Code Flow and Authentication Transfer sign-ins to help reduce exposure to device code phishing attacks.
 
 ---
 
 ### BP-ALSO-CA005-Global-Office365-iOSAndAndroid-ClientApps-Unmanaged-Grant-RequireAppEnforcedRestrictions
 
-This policy requires App Enforced Restrictions on unmanaged (BYOD) iOS/IpadOS and Android devices.
+Applies App Enforced Restrictions when unmanaged Android or iOS/iPadOS devices access Microsoft 365 resources.
 
 ---
 
 ### BP-ALSO-CA006-Global-Office365-AnyPlatform-Browser-Unmanaged-Grant-RequireAppEnforceRestrictions
 
-This policy requires App Protection policies for all users when accessing Office 365 data from unmanaged (BYOD) iOS or Android devices. Needs to be configured in Intune first. Look in iOS/Ipad and Android repos to get template.
+Requires application protection controls for unmanaged devices accessing Microsoft 365 data.
 
 ---
 
@@ -245,31 +245,31 @@ This policy requires App Protection policies for all users when accessing Office
 
 ### BP-ALSO-CA100-Admins-AdminPortals-AnyPlatform-Grant-RequireMFA
 
-This policy requires MFA for certain admin roles when they access the access Admin Portals. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
+Requires MFA for selected privileged administrative roles when accessing Microsoft administrative portals. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
 
 ---
 
 ### BP-ALSO-CA101-Admins-AllApps-AnyPlatform-Grant-RequireMFA
 
-This policy requires MFA for certain admin roles when they access the any cloud app. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
+Ensures privileged administrators perform MFA before accessing any cloud application. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
 
 ---
 
 ### BP-ALSO-CA102-Admins-AllApps-AnyPlatform-Grant-RequireSigninFrequency8H
 
-This policy sets a Sign-in frequency for certain admin roles to a maximum of 8 hours. Admins need to re-authenticate of logon after 8 hours. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
+Limits administrator sessions to a maximum sign-in duration of 8 hours before reauthentication is required. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
 
 ---
 
 ### BP-ALSO-CA103-Admins-AllApps-AnyPlatform-Grant-DisablePersistentBrowser
 
-This policy prevents having persistent browser sessions for admins from every device. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
+Disables persistent browser sessions for administrators to reduce the risk of unauthorized access from shared or unmanaged devices. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
 
 ---
 
 ### BP-ALSO-CA104-Admins-AllApps-AnyPlatform-Grant-CAEEnforceLocation
 
-his policy allows Microsoft Entra ID to re-evaluate a user's access to resources in near real-time, rather than waiting for the typical token expiration time (which could be up to an hour). Read the Microsoft documentation here: https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-continuous-access-evaluation#conditional-access-policy-evaluation-preview. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
+Enables Continuous Access Evaluation (CAE), allowing Microsoft Entra ID to reassess access decisions in near real time based on security events and location changes. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
 
 > [!WARNING]
 > PS: This policy only support ON or OFF mode, report mode are not supported.
@@ -278,31 +278,31 @@ his policy allows Microsoft Entra ID to re-evaluate a user's access to resources
 
 ### BP-ALSO-CA105-Admins-AllApps-AnyPlatform-Grant-PhishingResistantMFA
 
-Highly recommended one and aligns well with Zero Trust principles for admins.  This policy requires Phishing Resistant MFA for admins. Check your authentication methods in Entra ID first (FIDO2) or create custom authentication method. It does exclude Microsoft Graph Command Line Tools for own needs It's slightly different from the Microsoft Template policy. Global Reader and Intune Administrators are also included here. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
+Highly recommended. Requires phishing-resistant multifactor authentication for privileged administrators, supporting a stronger Zero Trust security posture.. Check your authentication methods in Entra ID first (FIDO2) or create custom authentication method. It does exclude Microsoft Graph Command Line Tools for own needs It's slightly different from the Microsoft Template policy. Global Reader and Intune Administrators are also included here. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
 
 ---
 
 ### BP-ALSO-CA107-Admins-AllApps-Windows-Grant-RequireCompliantDevice
 
-This policy requires compliant device for selected admin roles when signing in From Windows devices. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it. And set your compliance policies in Windows first of all. Check Intune policy repo to find compliance templates for Windows devices.
+Allows administrator sign-ins from Windows devices only when the device meets defined compliance requirements. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it. And set your compliance policies in Windows first of all. Check Intune policy repo to find compliance templates for Windows devices.
 
 ---
 
 ### BP-ALSO-CA108-Admins-AllApps-MacOS-Grant-RequireCompliantDevice
 
-This policy requires compliant device for selected admin roles when signing in From MacOS devices. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it. And set your compliance policies for MacOS first of all. Check Intune policy repo to find compliance templates for MacOS devices.
+Allows administrator sign-ins from macOS devices only when the device satisfies compliance policies.PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it. And set your compliance policies for MacOS first of all. Check Intune policy repo to find compliance templates for MacOS devices.
 
 ---
 
 ### BP-ALSO-CA109-Admins-AllApps-AnyPlatform-Block-UnknownPlatforms
 
-This policy blocks all platforms when signing in with admin account except Windows, MacOS, Android and iOS/IpadOS.  PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
+Prevents administrator access from unsupported device platforms, allowing only approved operating systems Windows, MacOS, Android, iOS/IpadOS.  PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it.
 
 ---
 
 ### BP-ALSO-CA110-Admins-AllApps-iOSandAndroid-Grant-RequireCompliantDevice
 
-This policy requires compliant device for selected admin roles when signing in From iOS/IpadOS or Android devices. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it. And set your compliance policies for iOS/IpadOS and Android first of all. Check Intune policy repo to find compliance templates for these devices. PS: Consider to block sign in from mobile devices for administrators if absolutely not needed!
+Requires compliant Android and iOS/iPadOS devices before administrators can access cloud resources. PS: Only 24 admin roles are included ( privileged ). Add more if you feel for it. And set your compliance policies for iOS/IpadOS and Android first of all. Check Intune policy repo to find compliance templates for these devices. PS: Consider to block sign in from mobile devices for administrators if absolutely not needed!
 
 ---
 
@@ -310,7 +310,7 @@ This policy requires compliant device for selected admin roles when signing in F
 
 ### BP-ALSO-CA200-Internals-AllApps-AnyPlatform-Grant-RequireMFA
 
-This policy requires MFA for all internal identities, for all cloud applications, from any platform.
+Requires multifactor authentication for internal users when accessing cloud applications from any supported platform.
 
 Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. PS: This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
@@ -322,7 +322,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA202-Internals-AllApps-UnmanagedWindowsAndMacOs-Grant-RequireSigninFrequency12H
 
-This policy sets a Sign-in frequency to a maximum of 12 hours for internals, to all cloud apps, using unmanaged Windows or MacOS devices. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
+Limits user sessions on unmanaged Windows and macOS devices by requiring reauthentication every 12 hours. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
@@ -332,7 +332,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA203-Internals-IntuneEnrollment-AnyPlatform-Grant-RequireMFA
 
-This policy requires MFA for internals when enrolling their devices in Intune. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
+Requires MFA before users can enroll devices into Microsoft Intune. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
@@ -350,7 +350,7 @@ New-MgServicePrincipal -AppId d4ebce55-015a-49b5-a083-c84d1797ae8c
 
 ### BP-ALSO-CA204-Internals-AllApps-AnyPlatform-Block-UnknownPlatforms
 
-This policy blocks unknown/unsupported device platforms for internals - MacOS, Windows, iOS/IpadOS and Android. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
+Blocks internal users from signing in using unsupported or unrecognized device platforms. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
@@ -360,7 +360,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA205-Internals-AllApps-Windows-Grant-RequireCompliantDevice
 
-This policy blocks access from non-compliant Windows devices. Remember to set compliance requirements in Intune for Windows first. Check Windows repo to find compliance templates for Windows. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
+Requires Windows devices to be compliant before internal users can access cloud applications. Remember to set compliance requirements in Intune for Windows first. Check Windows repo to find compliance templates for Windows. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
@@ -368,9 +368,9 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ---
 
-### BP-ALSO-CA206-Internals-AllApps-AnyPlatform-Grant-DIsablePersistentBrowser
+### BP-ALSO-CA206-Internals-AllApps-AnyPlatform-Grant-DisablePersistentBrowser
 
-This policy prevents having persistent browser sessions for internals from unmanaged devices. Managed and compliant devices are excluded from the policy. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
+Prevents persistent browser sessions on unmanaged devices while excluding compliant and managed devices. Managed and compliant devices are excluded from the policy. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
@@ -380,7 +380,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA207-Internals-SelectedApps-AnyPlatform-Block-SelectedApps
 
-This policy prevents internals from accessing specific apps. In this example i've blocked a random app. You should review the included and excluded apps. Excluding office 365 is not necessary if its not included. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
+Denies internal users access to specific applications defined within the policy scope. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
@@ -390,13 +390,13 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA208-Internals-AllApps-MacOs-RequireCompliantDevice
 
-This policy requires MacOS devices to be compliant for internals. Remember to set compliance requirements in Intune for MacOS first. Check MacOS repo to find compliance templates for MacOS.
+Requires macOS devices to meet compliance standards before granting access to internal users. Remember to set compliance requirements in Intune for MacOS first. Check MacOS repo to find compliance templates for MacOS.
 
 ---
 
 ### BP-ALSO-CA209-Internals-AllApps-AnyPlatform-EnforceLocationCAE
 
-This policy allows Microsoft Entra ID to re-evaluate a user's access to resources in near real-time, rather than waiting for the typical token expiration time (which could be up to an hour). Read the Microsoft documentation here: https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-continuous-access-evaluation#conditional-access-policy-evaluation-preview.
+Requires macOS devices to meet compliance standards before granting access to internal users.
 
 PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
@@ -413,7 +413,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA300-ServiceAccounts-AllApps-AnyPlatform-RequireMFA
 
-This policy requires ServiceAccounts to use MFA, from any platform when accessing any cloud app
+Enforces multifactor authentication for service account identities interacting with cloud applications.
 
 PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
@@ -425,7 +425,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA301-ServiceAccounts-AllApps-AnyPlatform-Block-UntrustedLocations
 
-This policy prevents service accounts from logging in from untrusted countries.
+Restricts service account sign-ins to trusted countries and blocks authentication attempts from other locations.
 
 PS: Verify the Named Location ALSO-Allowed countries for Service Accounts (NO) are imported to Entra ID, otherwise olicy will fail on import with following message:
 
@@ -439,39 +439,38 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### BP-ALSO-CA400-GuestUsers-AllApps-AnyPlatform-Grant-RequireMFA
 
-This policy requires guest to use MFA, from any platform when accessing any cloud app.
+Requires guest users to complete MFA before accessing cloud resources.
 
 ---
 
 ### BP-ALSO-CA401-GuestUsers-AllApps-AnyPlatform-Block-NonGuestAppAccess
 
-This policy blocks access for guests to all cloud apps (except for those excluded), from any device.
+Limits guest access by restricting which cloud applications can be accessed.
 
 ---
 
 ### BP-ALSO-CA402-GuestUsers-AllApps-AnyPlatform-Grant-SigninFrequency12H
 
-This policy sets a Sign-in frequency to a maximum of 12 hours for guests, to all cloud apps, using any device.
+Forces guest users to reauthenticate at least every 12 hours.
 
 ---
 
 ### BP-ALSO-CA403-GuestUsers-AllApps-AnyPlatform-Grant-DisablePersistentBrowser
 
-This policy prevents guest from having persistent browser sessions.
+Disables persistent browser sessions for guest users to reduce session exposure.
 
 ---
 
 ### BP-ALSO-CA404-GuestUsers-SelectedApps-AnyPlatform-Block-SelectedApps
 
-This policy prevents guests from accessing specific apps. In this example i've blocked a random app. You should review the included and excluded apps. Excluding office 365 is not necessary if its not included. This is just an example.
-
+Blocks guest access to applications explicitly defined within the policy scope.
 ---
 
 ## 🛡️ E5 Policies
 
 ### E5-ALSO-CA106-Tier0Admins-AllApps-AnyPlatform-Grant-RequirePhishingResistantMFAOnRoleActivation
 
-This policy requires phishing resistant MFA on role activation for Tier 0 admins. PS: Authentication context ALSO- Tier 0 Admins needs to imported to Entra ID first, otherwise policy will fail on import with following message:
+Requires phishing-resistant authentication when privileged Tier 0 roles are activated through Privileged Identity Management. PS: Authentication context ALSO- Tier 0 Admins needs to imported to Entra ID first, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request. Only Norway are in the scope of the named location, so please add/remove at your specific needs.
@@ -481,7 +480,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### E5-ALSO-CA201-Internals-AllApps-AnyPlatform-Block-HighRiskUser
 
-This policy blocks all internal users which have a high risk (user risk) status, to all cloud apps, from all platforms.
+Blocks access for users identified as high risk by Microsoft Entra ID Protection.
 
 PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
@@ -493,7 +492,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 
 ### E5-ALSO-CA210-Internals-AllApps-AnyPlatform-Block-HighRiskSignIn
 
-This policy blocks all internal users which have a high risk (signin risk) status, to all cloud apps, from all platforms. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
+Blocks authentication attempts that Microsoft Entra ID Protection classifies as high sign-in risk. PS: Verify the included group(s) and/or add your custom groups which have all internals in it. ALSO- All Internals is added as an example. This group needs to be imported to Entra, otherwise policy will fail on import with following message:
 
 ```text
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request

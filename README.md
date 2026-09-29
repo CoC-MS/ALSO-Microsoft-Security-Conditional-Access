@@ -16,7 +16,8 @@ Conditional Access templates are organized by the **minimum required license**.
 └── A365/
 ```
 License tag description
-|----------|-------------|
+
+
 | BP | Microsoft 365 Business Premium or Entra P1 |
 | E5 | Microsoft Defender Suite with Business Premium or Microsoft 365 E3 or Microsoft 365 E5 |
 | A365 | Agent 365 Standalone license with Defender Suite or Microsoft 365 E5 or Microsoft 365 E7 |

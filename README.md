@@ -539,15 +539,17 @@ https://entra.microsoft.com/ -> Properties -> Security defaults
 
    <img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
 
-7. Download CA ALSO.zip from this repo https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/blob/main/CA%20ALSO.zip, find and extract folder and choose CA ALSO folder.
+7. Download project and unzip folder
+
+<img width="401" height="373" alt="image" src="https://github.com/user-attachments/assets/b4005205-abc8-4e9b-a8b0-d6f919f99c06" />
+
    
 9. Choose Conditional Access, Named Locations and Authentication context in menu, remove everything else.
 
 > [!IMPORTANT]
 > **11. On Conditional Access state- SELECT OFF. Very important.**
  
-
-12. Uncheck import assignments if you don't want to to import groups, named locations and authentication context. PS: Many policies will fail on import here.
+Uncheck import assignments if you don't want to to import groups, named locations and authentication context. PS: Many policies will fail on import here.
 
 14. Check results on your tenant and if something is missing in CMD window. 
 

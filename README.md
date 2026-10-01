@@ -154,7 +154,7 @@ Actions define which controls are applied when the Conditional Access policy is 
 ## 🤖 Agent Policies
 
 > [!IMPORTANT]
-> **PS All agents policies CA501-505 requires Agent 365 license assigned and Agent 365 portal onboarding need to be finished- otherwise policies will fail on import with following message.**
+> **All Agent policies (CA501-CA505) require an Agent 365 license to be assigned and Agent 365 portal onboarding to be completed before import. Otherwise, the policies will fail during import and display the following error message.**
 
 ```text
 "Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df32d38d-3943-4a55-bfbc-e1e892358ebb). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request."

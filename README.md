@@ -552,9 +552,9 @@ https://entra.microsoft.com/ -> Properties -> Security defaults
 14. Check results on your tenant and if something is missing in CMD window. 
 
 
-## Open issue
+## Issues?
 
-Open issue: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/issues/new/choose
+Open issue here: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/issues/new/choose
 
 
 

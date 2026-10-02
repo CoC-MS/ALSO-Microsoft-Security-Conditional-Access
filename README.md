@@ -547,11 +547,11 @@ https://entra.microsoft.com/ -> Properties -> Security defaults
 9. Choose Conditional Access, Named Locations and Authentication context in menu, remove everything else.
 
 > [!IMPORTANT]
-> **11. On Conditional Access state- SELECT OFF. Very important.**
+> **10. On Conditional Access state- SELECT OFF. Very important.**
  
 Uncheck import assignments if you don't want to to import groups, named locations and authentication context. PS: Many policies will fail on import here.
 
-14. Check results on your tenant and if something is missing in CMD window. 
+11. Check results on your tenant and if something is missing in CMD window. 
 
 
 ## Issues?

@@ -2,7 +2,7 @@
 
 > A collection of Microsoft Entra Conditional Access policy templates, named locations, security groups and authentication context designed to help organizations accelerate secure deployments and implement Microsoft Security best practices with Zero trust principles.
 >
-> **Works with Business Premium and up.**
+> **Works with Microsoft 365 Business Premium and up.**
 
 ---
 

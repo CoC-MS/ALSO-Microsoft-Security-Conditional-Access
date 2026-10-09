@@ -47,7 +47,6 @@ The following licenses support all standard Conditional Access policies but **ex
 
 The following licenses can use baseline Conditional Access policies but **cannot use policies tagged with A365 or E5**.
 
-Policies tagged **E5** require Microsoft Entra ID P2 capabilities.
 
 | License | Experience |
 |----------|------------|

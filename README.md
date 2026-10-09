@@ -10,6 +10,57 @@
 > [!IMPORTANT]
 > **⚠️ IMPORTANT: Read this before importing any policies.**  
 
+-------------------
+
+## Conditional Access Licensing Guide
+
+### ✅ Full Experience
+
+The following licenses support **all Conditional Access policies in this repository**, including policies marked **A365 (Agent 365)**, **E5**, **Defender Suite**, and **Purview Suite**.
+
+| License | Experience |
+|----------|------------|
+| Microsoft 365 E7 | ✅ Full support |
+| Microsoft 365 E5 + Agent 365 | ✅ Full support |
+| Microsoft 365 E3 + Defender Suite + Purview Suite + Agent 365 | ✅ Full support |
+| Business Premium + Defender Suite + Purview Suite + Agent 365 | ✅ Full support |
+| Microsoft 365 F3 + Defender Suite + Purview Suite + Agent 365 | ✅ Full support |
+| Microsoft 365 F1 + Defender Suite + Purview Suite + Agent 365 | ✅ Full support |
+
+---
+
+### ⚠️ Limited Experience (Without Agent 365 Policies)
+
+The following licenses support all standard Conditional Access policies but **cannot use policies tagged with A365 (Agent 365)**.
+
+| License | Experience |
+|----------|------------|
+| Microsoft 365 E5 | ✅ Supports all policies except A365 |
+| Microsoft 365 E3 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
+| Business Premium + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
+| Microsoft 365 F3 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
+| Microsoft 365 F1 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
+
+---
+
+### ⚠️ Limited Experience (Without Agent 365 and E5 Policies)
+
+The following licenses can use baseline Conditional Access policies but **cannot use policies tagged A365 or E5**.
+
+Policies tagged **E5** require Microsoft Entra ID P2 capabilities.
+
+| License | Experience |
+|----------|------------|
+| Microsoft 365 E3 | ⚠️ Exclude A365 and E5 tagged policies |
+| Microsoft 365 Business Premium | ⚠️ Exclude A365 and E5 tagged policies |
+| Microsoft 365 F3 | ⚠️ Exclude A365 and E5 tagged policies |
+| Microsoft 365 F1 | ⚠️ Exclude A365 and E5 tagged policies |
+
+> **Important:** Policies marked with the **E5** tag require **Microsoft Entra ID P2** capabilities. Policies marked with the **A365** tag require **Agent 365 licensing and onboarding** to be completed before deployment.
+
+------------
+
+
 | Resource | Description |
 |-----------|-------------|
 | 🛡️ **Security Information** | [View Security Policy](https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main?tab=security-ov-file) |

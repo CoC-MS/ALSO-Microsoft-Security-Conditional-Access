@@ -16,7 +16,7 @@
 
 ### ✅ Full Experience
 
-The following licenses support **all Conditional Access policies in this repository**, including policies marked **A365 (Agent 365)**, **E5**, **Defender Suite**, and **Purview Suite**.
+The following licenses support **all Conditional Access policies in this repository**
 
 | License | Experience |
 |----------|------------|
@@ -31,7 +31,7 @@ The following licenses support **all Conditional Access policies in this reposit
 
 ### ⚠️ Limited Experience (Without Agent 365 Policies)
 
-The following licenses support all standard Conditional Access policies but **cannot use policies tagged with A365 (Agent 365)**.
+The following licenses support all standard Conditional Access policies but **except those tagged with A365 (Agent 365)**.
 
 | License | Experience |
 |----------|------------|
@@ -45,7 +45,7 @@ The following licenses support all standard Conditional Access policies but **ca
 
 ### ⚠️ Limited Experience (Without Agent 365 and E5 Policies)
 
-The following licenses can use baseline Conditional Access policies but **cannot use policies tagged A365 or E5**.
+The following licenses can use baseline Conditional Access policies but **cannot use policies tagged with A365 or E5**.
 
 Policies tagged **E5** require Microsoft Entra ID P2 capabilities.
 

@@ -93,7 +93,7 @@ All files are organized into categories
 
 ---
 
-## 📖 Naming Convention
+### 📖 Naming Convention
 
 All policy templates follow the naming format below:
 

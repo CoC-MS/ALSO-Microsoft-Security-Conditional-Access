@@ -550,6 +550,8 @@ Blocks authentication attempts that Microsoft Entra ID Protection classifies as 
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
 ```
 
+---
+
 ### Tenant prerequisites before importing  
 
 > [!IMPORTANT]
@@ -567,7 +569,9 @@ https://entra.microsoft.com/ -> Overview -> License
 https://entra.microsoft.com/ -> Properties -> Security defaults
 
 
-3. You have at least Conditional Access Administrator role assigned to your user 
+3. You have at least Conditional Access Administrator role assigned to your user
+
+---
 
 
 ### How to import
@@ -603,6 +607,7 @@ Uncheck import assignments if you don't want to to import groups, named location
 
 11. Check results on your tenant and if something is missing in CMD window. 
 
+---
 
 ### Issues?
 

@@ -604,7 +604,7 @@ Uncheck import assignments if you don't want to to import groups, named location
 11. Check results on your tenant and if something is missing in CMD window. 
 
 
-## Issues?
+### Issues?
 
 Open issue here: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/issues/new/choose
 

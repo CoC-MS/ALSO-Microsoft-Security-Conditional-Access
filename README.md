@@ -550,7 +550,7 @@ Blocks authentication attempts that Microsoft Entra ID Protection classifies as 
 Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/conditionalAccess/policies (Request ID: df5ea509-9005-47d1-9d00-8852534700ac). Status code: BadRequest. Response message: The server could not process the request because it is malformed or incorrect. Exception: The remote server returned an error: (400) Bad Request
 ```
 
-## Before importing 
+## Tenant prerequisites before importing  
 
 > [!IMPORTANT]
 > **PLEASE ENSURE THAT YOU HAVE COMPLETED THESE STEPS, BEFORE YOU START IMPORTING. AND THAT YOU HAVE READ POLICY DESCIRPTION HERE**: https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/tree/main#-conditional-access-policies

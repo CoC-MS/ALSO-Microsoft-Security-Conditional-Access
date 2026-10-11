@@ -50,10 +50,10 @@ The following licenses can use baseline Conditional Access policies but **cannot
 
 | License | Experience |
 |----------|------------|
-| Microsoft 365 E3 | ⚠️ Exclude A365 and E5 tagged policies |
+| Microsoft 365 E3 | ⚠️ Except A365 and E5 tagged policies |
 | Microsoft 365 Business Premium | ⚠️ Exclude A365 and E5 tagged policies |
-| Microsoft 365 F3 | ⚠️ Exclude A365 and E5 tagged policies |
-| Microsoft 365 F1 | ⚠️ Exclude A365 and E5 tagged policies |
+| Microsoft 365 F3 | ⚠️ Except A365 and E5 tagged policies |
+| Microsoft 365 F1 | ⚠️ Except A365 and E5 tagged policies |
 
 > **Important:** Policies marked with the **E5** tag require **Microsoft Entra ID P2** capabilities. Policies marked with the **A365** tag require **Agent 365 licensing and onboarding** to be completed before deployment.
 

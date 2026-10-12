@@ -16,7 +16,7 @@ Resolve source IDs to destination objects using the import tool's supported migr
 
 | Dependency | Current export | Review |
 | --- | --- | --- |
-| `ALSO-Whitelisted countries (NO)` | Norway (`NO`, `NL`, `BE`, `LU`) | CA001 blocks outside this location. |
+| `ALSO-Whitelisted countries (NO)` | Norway (`NO`) | CA001 blocks outside this location. |
 | `ALSO-Allowed countries for Service Accounts (NO)` | Norway (`NO`) | CA301 blocks outside this location. Set the intended countries before enabling. |
 | `All Compliant Network locations` | Compliant network named location | CA505 blocks agent users outside this location. Confirm Global Secure Access setup and the required licences; importing the location does not deploy a compliant network. |
 

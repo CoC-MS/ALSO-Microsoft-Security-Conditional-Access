@@ -83,7 +83,7 @@ Each folder is a complete export package with Conditional Access policies, suppo
 | --- | --- | --- |
 | 🌐 **Global** | CA000-CA006 | MFA, country restrictions, legacy authentication, device registration, authentication flows, and unmanaged Microsoft 365 access. |
 | 👑 **Admins / Tier 0** | CA100-CA110 | MFA, phishing-resistant authentication, session controls, device compliance, platform restrictions, and authentication context. |
-| 👤 **Internals** | CA200-CA210 | MFA, risk-based blocking, session controls, enrollment, platform restrictions, device compliance, and application restrictions. |
+| 👤 **Internals** | CA200-CA211 | MFA, risk-based blocking, session controls, enrollment, platform restrictions, device compliance, and application restrictions. |
 | ⚙️ **Service accounts** | CA300-CA301 | MFA and country restrictions for user-based service accounts, not service principals. |
 | 🤝 **Guest users** | CA400-CA404 | MFA, application restrictions, sign-in frequency, and browser persistence. |
 | 🤖 **Agents** | CA501-CA505 | Agent identity risk, agent resource restrictions, compliant devices, and compliant network access. |
@@ -106,4 +106,3 @@ Each folder is a complete export package with Conditional Access policies, suppo
 2. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), and [Security information](Security.md).
 3. Select and review policies using the [Policy guide](docs/public/conditional-access-policies.md).
 4. Follow [How to import](docs/public/how-to-import.md), keeping policies OFF until they are ready for a controlled pilot.
-

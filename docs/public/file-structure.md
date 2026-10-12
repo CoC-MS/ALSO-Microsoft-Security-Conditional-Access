@@ -7,7 +7,6 @@ This repository contains three cumulative, pre-generated Conditional Access pack
 ```text
 /
 ├── README.md
-├── README.old                       Previous long-form README backup
 ├── Security.md
 ├── LICENSE
 ├── docs/

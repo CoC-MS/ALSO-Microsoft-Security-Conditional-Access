@@ -25,7 +25,7 @@ BP-ALSO-CA105-Admins-AllApps-AnyPlatform-Grant-PhishingResistantMFA
 | `AccessControls` | Intended access action | `Grant`, `Block` |
 | `SessionControls` | Descriptive control/purpose suffix; may describe a grant control rather than a session control | `RequireMFA`, `DisablePersistentBrowser`, `RequireCompliantDevice` |
 
-Numbers group policies by persona: global `000`, administrators `100`, internals `200`, service accounts `300`, guests `400`, and agents `500` series. E5 policies CA106, CA201, and CA210 sit within the relevant persona series.
+Numbers group policies by persona: global `000`, administrators `100`, internals `200`, service accounts `300`, guests `400`, and agents `500` series. E5 policies CA106, CA201, and CA210 sit within the relevant persona series; the internal mobile-compliance policy is CA211.
 
 This is a descriptive convention, not a strict schema. Some exports omit components or add client-app/management scope; spellings and capitalization vary. Policy names do not guarantee the configured application, platform, licence, or action. See [Naming exceptions](naming-exceptions.md) and inspect the JSON.
 

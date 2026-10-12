@@ -2,7 +2,7 @@
 
 [Public documentation](README.md)
 
-This guide summarizes the 42 policies in the complete `ALSO_CA_E7` package by policy number. Links use that package as the canonical full set; BP policies are also present in `ALSO_CA_BP` and `ALSO_CA_E5`, while E5 policies are also present in `ALSO_CA_E5`. Read the complete conditions and controls before use; names and the previous README describe intent but sometimes differ from the settings.
+This guide summarizes the 42 policies in the complete `ALSO_CA_E7` package by policy number. Links use that package as the canonical full set; BP policies are also present in `ALSO_CA_BP` and `ALSO_CA_E5`, while E5 policies are also present in `ALSO_CA_E5`. Read the complete conditions and controls before use; names describe intent, but settings determine behavior.
 
 > [!IMPORTANT]
 > All current exports are disabled. Import in **OFF** state and review [General prerequisites](general-prerequisites.md) and [Conditional Access prerequisites](conditional-access-prerequisites.md). Supporting object references must be mapped to the destination tenant.
@@ -12,10 +12,10 @@ This guide summarizes the 42 policies in the complete `ALSO_CA_E7` package by po
 | Policy | Exported control / review |
 | --- | --- |
 | [BP CA000](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA000-Global-AllApps-AnyPlatform-Grant-RequireMFA.json) | MFA for all applications, subject to exclusions. |
-| [BP CA001](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA001-Global-AllApps-AnyPlatform-Block-ExceptWhitelListedCountries.json) | Block outside the whitelisted country location; the export includes Norway, Netherlands, Belgium, and Luxembourg. |
+| [BP CA001](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA001-Global-AllApps-AnyPlatform-Block-ExceptWhitelListedCountries.json) | Block outside the whitelisted country location; the current export includes Norway only. |
 | [BP CA002](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA002-Global-AllApps-AnyPlatform-Block-LegacyAuthentication.json) | Block legacy authentication client types. |
 | [BP CA003](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA003-Global-RegisterOrJoinDevice-AnyPlatform-Grant-RequireMFA.json) | MFA for the device registration user action; coordinate with the device registration MFA setting. |
-| [BP CA004](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA004-Globa-AllApps-AnyPlatform-Block-AuthenticationFlowsAndDeviceCodeFlow.json) | Block device code flow and authentication transfer; assess legitimate workflows. |
+| [BP CA004](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA004-Global-AllApps-AnyPlatform-Block-AuthenticationFlowsAndDeviceCodeFlow.json) | Block device code flow and authentication transfer; assess legitimate workflows. |
 | [BP CA005](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA005-Global-Microsoft365-iOSAndAndroid-ClientApps-Unmanaged-Grant-RequireAppProtectionPoliciy.json) | Microsoft 365 mobile client scenario with an app-protection-policy requirement; review the grant control and device conditions. |
 | [BP CA006](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA006-Global-Office365-AnyPlatform-Browser-Unmanaged-Grant-RequireAppEnforceRestrictions.json) | Application-enforced restrictions for SharePoint Online and Exchange Online browser access; configure service-side restrictions. |
 
@@ -27,9 +27,9 @@ Role targeting varies: most administrator policies contain 24 role IDs, CA103 co
 | --- | --- |
 | [BP CA100](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA100-Admins-AdminPortals-AnyPlatform-Grant-RequireMFA.json) | Multifactor authentication strength for Microsoft admin portals. |
 | [BP CA101](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA101-Admins-AllApps-AnyPlatform-Grant-RequireMFA.json) | MFA for all applications. |
-| [BP CA102](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA102-Admins-AllApps-AnyPlatform-Grant-RequireSigninFrequency8H.json) | Sign-in frequency of 8 hours; the exclusion group name says 12H. |
+| [BP CA102](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA102-Admins-AllApps-AnyPlatform-Grant-RequireSigninFrequency4H.json) | Sign-in frequency of 4 hours; the exclusion group name still says 12H. |
 | [BP CA103](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA103-Admins-AllApps-AnyPlatform-Grant-DisablePersistentBrowser.json) | Persistent browser mode `never`; review the 23-role scope. |
-| [BP CA104](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA104-Admins-AllApps-AnyPlatform-Grant-CAEEnforceLocation.json) | Strict-location CAE, but application scope is currently `None`; configure intended supported resources and use an ON/OFF pilot. |
+| [BP CA104](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA104-Admins-AllApps-AnyPlatform-Grant-CAEEnforceLocation.json) | Strict-location CAE for all applications; validate network behavior, locations, supported resources, and recovery access with an ON/OFF pilot. |
 | [BP CA105](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA105-Admins-AllApps-AnyPlatform-Grant-PhishingResistantMFA.json) | Phishing-resistant MFA; excludes Microsoft Graph Command Line Tools. |
 | [E5 CA106](../../ALSO_CA_E7/ConditionalAccess/E5-ALSO-CA106-Tier0Admins-AllApps-AnyPlatform-Grant-RequirePhishingResistantMFAOnRoleActivation.json) | Phishing-resistant MFA and every-time reauthentication for context `c1`; map the context and configure PIM activation separately. |
 | [BP CA107](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA107-Admins-AllApps-Windows-Grant-RequireCompliantDevice.json) | Require a compliant Windows device. |
@@ -46,15 +46,15 @@ Review the included internal-user group, exclusions, and device filters for each
 | [BP CA200](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA200-Internals-AllApps-AnyPlatform-Grant-RequireMFA.json) | MFA for the included internal-user group. |
 | [E5 CA201](../../ALSO_CA_E7/ConditionalAccess/E5-ALSO-CA201-Internals-AllApps-AnyPlatform-Block-HighRiskUser.json) | Block high user risk; confirm Entra ID Protection entitlement. |
 | [BP CA202](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA202-Internals-AllApps-UnmanagedWindowsAndMacOs-Grant-RequireSigninFrequency12H.json) | Sign-in frequency of 12 hours; review unmanaged-device scope. |
-| [BP CA203](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA203-Internals-IntuneEnrollment-AnyPlatform-Grant-RequireMFA.json) | MFA and every-time reauthentication; currently targets Microsoft Intune, not Microsoft Intune Enrollment. |
+| [BP CA203](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA203-Internals-IntuneEnrollment-AnyPlatform-Grant-RequireMFA.json) | MFA for the example Microsoft Intune application target. Register the Microsoft Intune Enrollment service principal manually and replace the example target for an enrollment deployment. |
 | [BP CA204](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA204-Internals-AllApps-AnyPlatform-Block-UnknownPlatforms.json) | Block platforms outside the exported platform exclusions. |
 | [BP CA205](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA205-Internals-AllApps-Windows-Grant-RequireCompliantDevice.json) | Require compliant Windows devices; review Microsoft Intune application exclusion. |
 | [BP CA206](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA206-Internals-AllApps-AnyPlatform-Grant-DIsablePersistentBrowser.json) | Persistent browser mode `never`; review managed/compliant-device exclusions. |
 | [BP CA207](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA207-Internals-SelectedApps-AnyPlatform-Block-SelectedApps.json) | Block a selected application with an Office365 exclusion; replace/resolve tenant-specific application scope. |
 | [BP CA208](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA208-Internals-AllApps-MacOs-RequireCompliantDevice.json) | Require compliant macOS devices; review Microsoft Intune application exclusion. |
 | [BP CA209](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA209-Internals-AllApps-AnyPlatform-EnforceLocationCAE.json) | Strict-location CAE, not a macOS compliance policy as described in the original README; use an ON/OFF pilot. |
-| [BP CA210](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA210-Internals-AllApps-iOSandAndroid-Grant-RequireCompliantDevice.json) | Require compliant iOS and Android devices for internal users; review the included group, exclusions, and Intune compliance prerequisites. |
 | [E5 CA210](../../ALSO_CA_E7/ConditionalAccess/E5-ALSO-CA210-Internals-AllApps-AnyPlatform-Block-HighRiskSignIn.json) | Block high sign-in risk; confirm Entra ID Protection entitlement. |
+| [BP CA211](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA211-Internals-AllApps-iOSandAndroid-Grant-RequireCompliantDevice.json) | Require compliant iOS and Android devices for internal users; review the included group, exclusions, and Intune compliance prerequisites. |
 
 ## ⚙️ Service-account policies
 
@@ -87,6 +87,6 @@ Complete Agent 365 licensing and onboarding before import. Agent identities and 
 | [A365 CA502](../../ALSO_CA_E7/ConditionalAccess/A365-ALSO-CA502-Agents-AllAgentIdentities-AllAgentResources-Block-AllExceptSelected.json) | Block agent identities accessing agent resources; establish intended approved exclusions before enabling. |
 | [A365 CA503](../../ALSO_CA_E7/ConditionalAccess/A365-ALSO-CA503-Agents-AllAgentUsers-Grant-RequireCompliantDevice.json) | Require compliant devices for agent users. |
 | [A365 CA504](../../ALSO_CA_E7/ConditionalAccess/A365-ALSO-CA504-Agents-AllAgentUsers-AllResources-Block-RiskyAgents.json) | Block agent users with medium/high agent identity risk. |
-| [A365 CA505](../../ALSO_CA_E7/ConditionalAccess/A365-ALSO-CA505-Agents-AllAgentUsers-AllResources-Grant-RequireCompliantNetWork.json) | Block agent users outside the compliant network location for `AllAgentIdResources`; the `Grant` name is not the actual grant control. |
+| [A365 CA505](../../ALSO_CA_E7/ConditionalAccess/A365-ALSO-CA505-Agents-AllAgentUsers-AllResources-Block-RequireCompliantNetWork.json) | Block agent users outside the compliant network location for `AllAgentIdResources`. |
 
 Continue with [How to import](how-to-import.md). For naming variations, see [Naming exceptions](naming-exceptions.md).

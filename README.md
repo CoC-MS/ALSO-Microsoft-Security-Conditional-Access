@@ -14,7 +14,7 @@
 
 ### Conditional Access Licensing Guide
 
-## ✅ Full Experience
+## ✅ Full Experience ALSO_CA_E7 folder
 
 The following licenses support **all Conditional Access policies in this repository**
 
@@ -29,7 +29,7 @@ The following licenses support **all Conditional Access policies in this reposit
 
 ---
 
-## ⚠️ Limited Experience (Without Agent 365 Policies)
+## ⚠️ Limited Experience (Without Agent 365 Policies) ALSO_CA_E5 folder
 
 The following licenses support all standard Conditional Access policies but **except those tagged with A365 (Agent 365)**.
 
@@ -43,7 +43,7 @@ The following licenses support all standard Conditional Access policies but **ex
 
 ---
 
-## ⚠️ Limited Experience (Without Agent 365 and E5 Policies)
+## ⚠️ Limited Experience (Without Agent 365 and E5 Policies) ALSO_CA_BP folder
 
 The following licenses can use baseline Conditional Access policies but **cannot use policies tagged with A365 or E5**.
 

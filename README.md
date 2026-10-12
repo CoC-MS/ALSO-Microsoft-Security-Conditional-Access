@@ -47,15 +47,6 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 | Microsoft 365 F3 | ⚠️ Excludes A365 and E5 policies |
 | Microsoft 365 F1 | ⚠️ Excludes A365 and E5 policies |
 
-> [!IMPORTANT]
-> Policies tagged **E5** require Microsoft Entra ID P2 capabilities. Policies tagged **A365** require Agent 365 licensing and onboarding before deployment. Feature-specific licensing can change; verify current Microsoft licensing and the selected controls before import.
-
-| Tag | Minimum repository classification |
-| :---: | --- |
-| **BP** | Microsoft 365 Business Premium or Microsoft Entra ID P1 |
-| **E5** | Microsoft Defender Suite for Business Premium, Microsoft 365 E3, or Microsoft 365 E5; verify Entra ID P2 requirements |
-| **A365** | Agent 365 with the required Microsoft Defender licensing, or Microsoft 365 E7 |
-
 ---
 
 | Resource | Description |

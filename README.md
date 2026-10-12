@@ -56,7 +56,6 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 | 🛡️ **[Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md)** | Prepare exclusions, locations, compliance, authentication, and agent dependencies. |
 | 🧩 **[Dependencies and import errors](docs/public/dependencies-and-import-errors.md)** | Review required tenant objects, representative Graph errors, and CA203 service-principal registration. |
 | 📖 **[Policy naming](docs/public/policy-naming.md)** | Understand licence tags, policy numbers, and personas. |
-| 🏷️ **[Naming exceptions](docs/public/naming-exceptions.md)** | Review existing filename and setting mismatches without renaming exports. |
 | 📂 **[File structure](docs/public/file-structure.md)** | Compare packages and find policy exports and supporting resources. |
 | 📥 **[How to import](docs/public/how-to-import.md)** | Import one reviewed package, then validate in Entra. |
 | 🐛 **[Reporting issues](docs/public/reporting-issues.md)** | Report problems without disclosing tenant information. |

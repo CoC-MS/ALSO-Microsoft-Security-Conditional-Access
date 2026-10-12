@@ -11,12 +11,6 @@ Check these items before importing Conditional Access resources into Microsoft E
 
 The repository provides three cumulative packages and classifies policies with these tags:
 
-| Tag | Repository classification | Verify before deployment |
-| --- | --- | --- |
-| `BP` | Microsoft 365 Business Premium or Microsoft Entra ID P1 | Conditional Access entitlement for targeted users and additional service requirements for the selected controls. |
-| `E5` | Microsoft Defender Suite for Business Premium, Microsoft 365 E3, or Microsoft 365 E5 | Actual Entra ID Protection and PIM entitlements; risk policies require Entra ID P2, and PIM requires eligible Entra ID P2 or ID Governance licensing. |
-| `A365` | Agent 365 standalone with Microsoft Defender Suite for Business Premium, Microsoft 365 E3/E5, or Microsoft 365 E7 | Current Agent 365 entitlement, onboarding, and the selected agent/network features. |
-
 Choose `ALSO_CA_BP` for BP policies, `ALSO_CA_E5` for BP and E5 policies, or `ALSO_CA_E7` for BP, E5, and A365 policies. See the [main licensing guide](../../README.md#conditional-access-licensing-guide).
 
 These are source classifications, not a guarantee that a product name covers every setting. Confirm your tenant's purchased licences and Microsoft's current terms. Do not import E5 or A365 policies merely because BP policies are available.

@@ -9,6 +9,7 @@ Partner-facing guidance for reviewing and deploying the Conditional Access expor
 | --- | --- |
 | 🚀 **[General prerequisites](general-prerequisites.md)** | Check licences, permissions, and rollout readiness. |
 | 🛡️ **[Conditional Access prerequisites](conditional-access-prerequisites.md)** | Prepare identity, application, device, location, and agent dependencies. |
+| 🧩 **[Dependencies and import errors](dependencies-and-import-errors.md)** | Resolve referenced objects, understand common Graph errors, and register required service principals. |
 | 🔐 **[Policy guide](conditional-access-policies.md)** | Review exported controls by persona. |
 | 📖 **[Policy naming](policy-naming.md)** | Understand naming components and licence tags. |
 | 🏷️ **[Naming exceptions](naming-exceptions.md)** | Understand current names and settings that need special review. |

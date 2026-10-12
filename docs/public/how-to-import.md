@@ -2,7 +2,7 @@
 
 [Public documentation](README.md)
 
-Complete [General prerequisites](general-prerequisites.md), [Conditional Access prerequisites](conditional-access-prerequisites.md), and the review of selected policies in the [Policy guide](conditional-access-policies.md).
+Complete [General prerequisites](general-prerequisites.md), [Conditional Access prerequisites](conditional-access-prerequisites.md), [Dependencies and import errors](dependencies-and-import-errors.md), and the review of selected policies in the [Policy guide](conditional-access-policies.md).
 
 Use the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManagement) as described in the existing repository guide. Follow its current setup and authentication instructions; UI labels and dependency handling may vary by version.
 
@@ -40,7 +40,7 @@ These illustrations are retained from the existing root README. They show the sh
 3. Prepare required groups, locations, and authentication context before importing dependent policies, or use the tool's supported dependency-import/migration workflow. Review the source migration mappings and map every selected reference to the intended destination object.
 4. The existing guide describes **Import assignments** as affecting dependency imports. Do not assume unchecking it makes the import complete or safe: omitted groups, locations, or context can cause policy import failures. If you omit automatic dependency import, create/map those objects separately first. Review the current tool version's behavior.
 5. Explicitly choose **OFF** for Conditional Access state. Review selections and the target tenant before starting.
-6. Inspect tool results and command-window output for failures. Missing references, app/service principals, consent, or Agent 365 readiness must be resolved rather than ignored. Inspect the resulting objects in Entra and confirm all imported policies are disabled.
+6. Inspect tool results and command-window output for failures. Missing references, app/service principals, consent, or Agent 365 readiness must be resolved rather than ignored. Use the representative errors and policy dependency matrix in [Dependencies and import errors](dependencies-and-import-errors.md). Inspect the resulting objects in Entra and confirm all imported policies are disabled.
 
 ## Review, pilot, and enable
 

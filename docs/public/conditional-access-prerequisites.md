@@ -46,4 +46,4 @@ The existing guide requires an **Agent 365 licence and Agent 365 portal onboardi
 
 CA502 blocks agent identities by default, so define approved exclusions before enablement. CA503 requires compliant devices for agent users. CA505 blocks agent users outside the compliant network and targets `AllAgentIdResources`.
 
-See the [Policy guide](conditional-access-policies.md), [Naming exceptions](naming-exceptions.md), and [How to import](how-to-import.md).
+See [Dependencies and import errors](dependencies-and-import-errors.md) for representative Graph errors and the policy-by-policy dependency matrix. Continue with the [Policy guide](conditional-access-policies.md), [Naming exceptions](naming-exceptions.md), and [How to import](how-to-import.md).

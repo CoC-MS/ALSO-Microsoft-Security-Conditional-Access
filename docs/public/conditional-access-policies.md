@@ -5,7 +5,7 @@
 This guide summarizes the 42 policies in the complete `ALSO_CA_E7` package by policy number. Links use that package as the canonical full set; BP policies are also present in `ALSO_CA_BP` and `ALSO_CA_E5`, while E5 policies are also present in `ALSO_CA_E5`. Read the complete conditions and controls before use; names describe intent, but settings determine behavior.
 
 > [!IMPORTANT]
-> All current exports are disabled. Import in **OFF** state and review [General prerequisites](general-prerequisites.md) and [Conditional Access prerequisites](conditional-access-prerequisites.md). Supporting object references must be mapped to the destination tenant.
+> All current exports are disabled. Import in **OFF** state and review [General prerequisites](general-prerequisites.md), [Conditional Access prerequisites](conditional-access-prerequisites.md), and [Dependencies and import errors](dependencies-and-import-errors.md). Supporting object references must be mapped to the destination tenant.
 
 ## 🌐 Global policies
 

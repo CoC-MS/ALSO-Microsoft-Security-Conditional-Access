@@ -54,6 +54,7 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 | 🔐 **[Policy guide](docs/public/conditional-access-policies.md)** | Review policies by persona and their deployment caveats. |
 | 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Check licensing, permissions, and deployment preparation. |
 | 🛡️ **[Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md)** | Prepare exclusions, locations, compliance, authentication, and agent dependencies. |
+| 🧩 **[Dependencies and import errors](docs/public/dependencies-and-import-errors.md)** | Review required tenant objects, representative Graph errors, and CA203 service-principal registration. |
 | 📖 **[Policy naming](docs/public/policy-naming.md)** | Understand licence tags, policy numbers, and personas. |
 | 🏷️ **[Naming exceptions](docs/public/naming-exceptions.md)** | Review existing filename and setting mismatches without renaming exports. |
 | 📂 **[File structure](docs/public/file-structure.md)** | Compare packages and find policy exports and supporting resources. |
@@ -103,6 +104,6 @@ Each folder is a complete export package with Conditional Access policies, suppo
 ## 🚀 Getting started
 
 1. Choose one package using the licensing guide above and [File structure](docs/public/file-structure.md).
-2. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), and [Security information](Security.md).
+2. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), [Dependencies and import errors](docs/public/dependencies-and-import-errors.md), and [Security information](Security.md).
 3. Select and review policies using the [Policy guide](docs/public/conditional-access-policies.md).
 4. Follow [How to import](docs/public/how-to-import.md), keeping policies OFF until they are ready for a controlled pilot.

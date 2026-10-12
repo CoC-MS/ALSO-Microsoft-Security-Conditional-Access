@@ -42,10 +42,10 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 
 | License | Experience |
 | --- | --- |
-| Microsoft 365 E3 | ⚠️ Excludes A365 and E5 policies |
-| Microsoft 365 Business Premium | ⚠️ Excludes A365 and E5 policies |
-| Microsoft 365 F3 | ⚠️ Excludes A365 and E5 policies |
-| Microsoft 365 F1 | ⚠️ Excludes A365 and E5 policies |
+| Microsoft 365 E3 | Limited experience ⚠️ Excludes A365 and E5 policies |
+| Microsoft 365 Business Premium | Limited experience ⚠️ Excludes A365 and E5 policies |
+| Microsoft 365 F3 | Limited experience ⚠️ Excludes A365 and E5 policies |
+| Microsoft 365 F1 | Limited experience ⚠️ Excludes A365 and E5 policies |
 
 ---
 

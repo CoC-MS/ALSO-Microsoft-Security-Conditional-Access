@@ -64,7 +64,7 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 
 ---
 
-## 📦 Conditional Access packages
+## 📦 Conditional Access packages  
 
 Each folder is a complete export package with Conditional Access policies, supporting groups, named locations, and `MigrationTable.json`.
 

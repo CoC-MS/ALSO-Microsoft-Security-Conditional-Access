@@ -30,11 +30,11 @@ Use [`ALSO_CA_E5`](ALSO_CA_E5) for all standard BP and E5 Conditional Access pol
 
 | License | Experience |
 | --- | --- |
-| Microsoft 365 E5 | ✅ Supports all policies except A365 |
-| Microsoft 365 E3 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
-| Business Premium + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
-| Microsoft 365 F3 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
-| Microsoft 365 F1 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
+| Microsoft 365 E5 | ⚠️ Supports all policies except A365 |
+| Microsoft 365 E3 + Defender Suite and/or Purview Suite | ⚠️ Supports all policies except A365 |
+| Business Premium + Defender Suite and/or Purview Suite | ⚠️ Supports all policies except A365 |
+| Microsoft 365 F3 + Defender Suite and/or Purview Suite | ⚠️ Supports all policies except A365 |
+| Microsoft 365 F1 + Defender Suite and/or Purview Suite | ⚠️ Supports all policies except A365 |
 
 ### ⚠️ `ALSO_CA_BP` — Limited experience- excludes A365 and E5 policies
 
@@ -42,10 +42,10 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 
 | License | Experience |
 | --- | --- |
-| Microsoft 365 E3 | Limited experience ⚠️ Excludes A365 and E5 policies |
-| Microsoft 365 Business Premium | Limited experience ⚠️ Excludes A365 and E5 policies |
-| Microsoft 365 F3 | Limited experience ⚠️ Excludes A365 and E5 policies |
-| Microsoft 365 F1 | Limited experience ⚠️ Excludes A365 and E5 policies |
+| Microsoft 365 E3 | ⚠️ Limited experience Excludes A365 and E5 policies |
+| Microsoft 365 Business Premium | ⚠️ Limited experience Excludes A365 and E5 policies |
+| Microsoft 365 F3 | ⚠️ Limited experience Excludes A365 and E5 policies |
+| Microsoft 365 F1 | ⚠️ Limited experience Excludes A365 and E5 policies |
 
 ---
 

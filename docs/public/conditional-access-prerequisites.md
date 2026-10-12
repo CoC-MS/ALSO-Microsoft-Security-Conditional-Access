@@ -18,7 +18,7 @@ Resolve source IDs to destination objects using the import tool's supported migr
 | --- | --- | --- |
 | `ALSO-Whitelisted countries (NO)` | Norway (`NO`) | CA001 blocks outside this location. Set the intended countries before enabling |
 | `ALSO-Allowed countries for Service Accounts (NO)` | Norway (`NO`) | CA301 blocks outside this location. Set the intended countries before enabling. |
-| `All Compliant Network locations` | Compliant network named location | CA505 blocks agent users outside this location. Confirm Global Secure Access setup and the required licences; importing the location does not deploy a compliant network. |
+| `All Compliant Network locations` | Compliant network named location | CA505 blocks agent users outside this location. Confirm Global Secure Access setup and the required licences; importing the location does not deploy a compliant network. Microsoft 365 Business Premium supports Microsoft Network Profile |
 
 CA104 and CA209 use strict-location CAE. CA104 now targets all applications. Verify supported resources, network behavior, locations, and recovery access before testing. Do not assume report-only is supported for strict-location enforcement.
 

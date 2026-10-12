@@ -2,7 +2,7 @@
 
 [Public documentation](README.md)
 
-The existing README describes the common naming format as:
+The previous README describes the common naming format as:
 
 ```text
 <MinimumLicense>-ALSO-CA###-<Persona>-<Apps>-<Platforms>-<AccessControls>-<SessionControls>
@@ -29,4 +29,4 @@ Numbers group policies by persona: global `000`, administrators `100`, internals
 
 This is a descriptive convention, not a strict schema. Some exports omit components or add client-app/management scope; spellings and capitalization vary. Policy names do not guarantee the configured application, platform, licence, or action. See [Naming exceptions](naming-exceptions.md) and inspect the JSON.
 
-Supporting groups often reuse a policy name followed by `Exclude`. Map references by object identity, not by reconstructing a filename from this convention. No names or policy assets are changed by this preview.
+Supporting groups often reuse a policy name followed by `Exclude`. Map references by object identity, not by reconstructing a filename from this convention. No names or policy assets are changed by this documentation restructure.

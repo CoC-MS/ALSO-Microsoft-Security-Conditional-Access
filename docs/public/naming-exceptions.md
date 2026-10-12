@@ -2,7 +2,7 @@
 
 [Public documentation](README.md)
 
-The Windows example has a short-name exceptions page. Conditional Access instead needs guidance on existing naming variations and name/setting mismatches. There is no evidence of a separate short-name export scheme here.
+Conditional Access needs guidance on existing naming variations and name/setting mismatches. There is no separate short-name export scheme here.
 
 | Export or name | Current exception | Action before use |
 | --- | --- | --- |
@@ -16,6 +16,6 @@ The Windows example has a short-name exceptions page. Conditional Access instead
 | CA203 | Name says `IntuneEnrollment`; export targets Microsoft Intune | Review enrollment targeting and service principal prerequisites. |
 | CA505 | Name says `Grant` and `AllResources`; export blocks outside a compliant network and targets `AllAgentIdResources` | Validate the configured action, location, and resource scope. |
 
-The [Policy guide](conditional-access-policies.md) summarizes actual controls. The original README remains unchanged, including descriptions that differ from current settings. This documentation preview does not silently rename files, normalize exported names, or correct policy JSON.
+The [Policy guide](conditional-access-policies.md) summarizes actual controls. The previous long-form README is retained as [`README.old`](../../README.old). This documentation does not silently rename files, normalize exported names, or correct policy JSON.
 
 Long filenames can also exceed Windows extraction/path limits. Use a short extraction path and, if needed, a long-path-capable archive tool; verify all exports are present before importing.

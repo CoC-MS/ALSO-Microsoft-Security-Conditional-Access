@@ -11,19 +11,20 @@ Use the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManage
 
 ## Download and sign in
 
-1. Download the repository with **Code > Download ZIP** and extract it to a short path. Verify all long filenames were extracted. Keep `ALSO_CA` and its migration metadata together.
+1. Use the [licensing guide](../../README.md#conditional-access-licensing-guide) to choose exactly one package: `ALSO_CA_BP`, `ALSO_CA_E5`, or `ALSO_CA_E7`.
+2. Download the repository with **Code > Download ZIP** and extract it to a short path. Verify all long filenames were extracted. Keep the selected package and its migration metadata together.
 
    ![GitHub Code menu showing Download ZIP](https://github.com/user-attachments/assets/b4005205-abc8-4e9b-a8b0-d6f919f99c06)
 
-2. Download and extract the tool. On Windows, launch `start.cmd` from its folder.
+3. Download and extract the tool. On Windows, launch `start.cmd` from its folder.
 
    ![Intune Management Tool folder with start.cmd](https://github.com/user-attachments/assets/ae7405c2-17cb-43a1-a96e-cd60181a2619)
 
-3. Select the sign-in icon in the upper-right corner. Sign in with authorized permissions and confirm the destination tenant.
+4. Select the sign-in icon in the upper-right corner. Sign in with authorized permissions and confirm the destination tenant.
 
    ![Import tool sign-in icon](https://github.com/user-attachments/assets/2e835f79-5e07-4c7d-bd7c-5bd4976fde50)
 
-4. If API consent is required, have an authorized administrator review the requested permissions and use **Request Consent** according to the tool's current instructions.
+5. If API consent is required, have an authorized administrator review the requested permissions and use **Request Consent** according to the tool's current instructions.
 
    ![Sign-in menu showing Request Consent](https://github.com/user-attachments/assets/675ebdc9-dc87-4633-bfa5-fbb92f7ba53d)
 
@@ -31,11 +32,11 @@ These illustrations are retained from the existing root README. They show the sh
 
 ## Import selected Conditional Access resources
 
-1. Select **Bulk > Import** and point the workflow at the extracted `ALSO_CA` export set, not at `docs/public`.
+1. Select **Bulk > Import** and point the workflow at the selected `ALSO_CA_BP`, `ALSO_CA_E5`, or `ALSO_CA_E7` package, not at the repository root or `docs/public`.
 
    ![Bulk menu showing Import](https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c)
 
-2. Select **Conditional Access**, **Named Locations**, and **Authentication context** as needed for reviewed policies; deselect unrelated workloads. Select only the policies you intend to deploy, especially excluding A365 policies if agent prerequisites are not met.
+2. Select **Conditional Access** and **Named Locations** as needed for reviewed policies; deselect unrelated workloads. Select only the policies you intend to deploy. A365 policies are available only in `ALSO_CA_E7` and require agent prerequisites.
 3. Prepare required groups, locations, and authentication context before importing dependent policies, or use the tool's supported dependency-import/migration workflow. Review the source migration mappings and map every selected reference to the intended destination object.
 4. The existing guide describes **Import assignments** as affecting dependency imports. Do not assume unchecking it makes the import complete or safe: omitted groups, locations, or context can cause policy import failures. If you omit automatic dependency import, create/map those objects separately first. Review the current tool version's behavior.
 5. Explicitly choose **OFF** for Conditional Access state. Review selections and the target tenant before starting.

@@ -26,7 +26,7 @@ CA104 and CA209 use strict-location CAE. Verify supported resources, network beh
 
 Prepare MFA registration and permitted authentication methods for MFA policies. CA105 and CA106 require phishing-resistant MFA; ensure targeted users have a supported method and a recovery path. CA105 excludes Microsoft Graph Command Line Tools; review whether that exception is appropriate.
 
-CA106 references the supplied `ALSO-Tier0 Admins` authentication context (`c1`). Import or map that context first, then configure the intended PIM role activation settings to request it. Importing a Conditional Access policy and context does not automatically attach the context to PIM roles.
+CA106 references the `ALSO-Tier0 Admins` authentication context (`c1`). The current packages do not include an `AuthenticationContext` export, so create or map the intended context before importing CA106, then configure the intended PIM role activation settings to request it. Importing a Conditional Access policy does not automatically attach a context to PIM roles.
 
 For CA003, review the device setting **Require Multifactor Authentication to register or join devices with Microsoft Entra**. The existing guide calls for disabling that setting before enabling the Conditional Access replacement; plan the change without leaving a protection gap.
 

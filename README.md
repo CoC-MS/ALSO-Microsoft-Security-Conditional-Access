@@ -24,7 +24,7 @@ Use [`ALSO_CA_E7`](ALSO_CA_E7) when the tenant is licensed for all policies, inc
 | Microsoft 365 F3 + Defender Suite + Purview Suite + Agent 365 | ✅ Full support |
 | Microsoft 365 F1 + Defender Suite + Purview Suite + Agent 365 | ✅ Full support |
 
-### ⚠️ `ALSO_CA_E5` — without Agent 365 policies
+### ⚠️ `ALSO_CA_E5` — Limited experience- without Agent 365 policies
 
 Use [`ALSO_CA_E5`](ALSO_CA_E5) for all standard BP and E5 Conditional Access policies, excluding policies tagged `A365`.
 
@@ -36,7 +36,7 @@ Use [`ALSO_CA_E5`](ALSO_CA_E5) for all standard BP and E5 Conditional Access pol
 | Microsoft 365 F3 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
 | Microsoft 365 F1 + Defender Suite and/or Purview Suite | ✅ Supports all policies except A365 |
 
-### ⚠️ `ALSO_CA_BP` — baseline policies
+### ⚠️ `ALSO_CA_BP` — Limited experience- excludes A365 and E5 policies
 
 Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This package excludes policies tagged `E5` and `A365`.
 

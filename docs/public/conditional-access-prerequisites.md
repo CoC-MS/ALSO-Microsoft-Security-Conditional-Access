@@ -6,9 +6,9 @@ Complete [General prerequisites](general-prerequisites.md), then review the depe
 
 ## 👥 Identity scope and exclusions
 
-Review included and excluded users, groups, administrative roles, guest types, agent identities, and applications in each JSON. Internal-user and service-account groups are supplied as examples; validate or populate membership explicitly. CA300 and CA301 reference `ALSO- CA-ServiceAccounts`, not the internal-user group.
+Review included exclusion groups included in the package or use your own groups.  
 
-Administrator policies include 24 role IDs. These lists do not represent every administrative role; assess the actual IDs and your intended scope. Validate emergency-access exclusions across every policy you enable, including broad global policies.
+Administrator policies include only 24 privileged Entra administrator roles. These lists do not represent every administrative role and your intended scope. Validate emergency-access exclusions across every policy you enable, including broad global policies.
 
 
 ## 🌍 Locations and networks

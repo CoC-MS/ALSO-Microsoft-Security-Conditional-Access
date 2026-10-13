@@ -8,9 +8,8 @@ Complete [General prerequisites](general-prerequisites.md), then review the depe
 
 Review included and excluded users, groups, administrative roles, guest types, agent identities, and applications in each JSON. Internal-user and service-account groups are supplied as examples; validate or populate membership explicitly. CA300 and CA301 reference `ALSO- CA-ServiceAccounts`, not the internal-user group.
 
-Most administrator policies include 24 role IDs, but CA103 includes 23. These lists do not represent every administrative role; assess the actual IDs and your intended scope. Validate emergency-access exclusions across every policy you enable, including broad global policies.
+Administrator policies include 24 role IDs. These lists do not represent every administrative role; assess the actual IDs and your intended scope. Validate emergency-access exclusions across every policy you enable, including broad global policies.
 
-Resolve source IDs to destination objects using the import tool's supported migration workflow. Review `MigrationTable.json` as source metadata; it does not prove that references exist in the target tenant. Missing or incorrect references can cause import failures or unintended targeting.
 
 ## 🌍 Locations and networks
 

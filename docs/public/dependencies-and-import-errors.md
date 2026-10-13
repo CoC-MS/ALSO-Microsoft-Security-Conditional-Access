@@ -76,9 +76,8 @@ The packages include example groups and policy-specific exclusion groups. Import
 
 1. Map source group references to the intended destination groups.
 2. Populate `ALSO- All Internals`, `ALSO- CA-ServiceAccounts`, emergency-access exclusions, Tier 0 groups, and policy-specific exclusions.
-3. Inspect duplicate-looking CA301 exclusion files before importing them.
-4. Confirm every include and exclude object in the resulting policy.
-5. Use Conditional Access **What If** and sign-in logs with test identities.
+3. Confirm every include and exclude object in the resulting policy.
+4. Use Conditional Access **What If** and sign-in logs with test identities.
 
 If **Import assignments** or dependency import is disabled in the import tool, create and map the objects separately before importing dependent policies. Do not treat a skipped dependency as an optional assignment.
 

@@ -13,7 +13,6 @@ The repository provides three cumulative packages and classifies policies with t
 
 Choose `ALSO_CA_BP` for BP policies, `ALSO_CA_E5` for BP and E5 policies, or `ALSO_CA_E7` for BP, E5, and A365 policies. See the [main licensing guide](../../README.md#conditional-access-licensing-guide).
 
-These are source classifications, not a guarantee that a product name covers every setting. Confirm your tenant's purchased licences and Microsoft's current terms. Do not import E5 or A365 policies merely because BP policies are available.
 
 ## 🧰 Permissions and tenant preparation
 

@@ -12,7 +12,6 @@ Partner-facing guidance for reviewing and deploying the Conditional Access expor
 | 🧩 **[Dependencies and import errors](dependencies-and-import-errors.md)** | Resolve referenced objects, understand common Graph errors, and register required service principals. |
 | 🔐 **[Policy guide](conditional-access-policies.md)** | Review exported controls by persona. |
 | 📖 **[Policy naming](policy-naming.md)** | Understand naming components and licence tags. |
-| 🏷️ **[Naming exceptions](naming-exceptions.md)** | Understand current names and settings that need special review. |
 | 📂 **[File structure](file-structure.md)** | Compare packages and locate policies and supporting exports. |
 | 📥 **[How to import](how-to-import.md)** | Import one selected package and validate it in Entra. |
 | 🐛 **[Reporting issues](reporting-issues.md)** | Report problems safely. |

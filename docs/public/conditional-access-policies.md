@@ -31,7 +31,7 @@ Role targeting varies: most administrator policies contain 24 role IDs, CA103 co
 | [BP CA103](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA103-Admins-AllApps-AnyPlatform-Grant-DisablePersistentBrowser.json) | Persistent browser mode `never`; review the 23-role scope. |
 | [BP CA104](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA104-Admins-AllApps-AnyPlatform-Grant-CAEEnforceLocation.json) | Strict-location CAE for all applications; validate network behavior, locations, supported resources, and recovery access with an ON/OFF pilot. |
 | [BP CA105](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA105-Admins-AllApps-AnyPlatform-Grant-PhishingResistantMFA.json) | Phishing-resistant MFA; excludes Microsoft Graph Command Line Tools. |
-| [E5 CA106](../../ALSO_CA_E7/ConditionalAccess/E5-ALSO-CA106-Tier0Admins-AllApps-AnyPlatform-Grant-RequirePhishingResistantMFAOnRoleActivation.json) | Phishing-resistant MFA and every-time reauthentication for context `c1`; map the context and configure PIM activation separately. |
+| [E5 CA106](../../ALSO_CA_E7/ConditionalAccess/E5-ALSO-CA106-Tier0Admins-AllApps-AnyPlatform-Grant-RequirePhishingResistantMFAOnRoleActivation.json) | Phishing-resistant MFA and every-time reauthentication for context `c1`; import or map the included [`ALSO-Tier0 Admins` authentication context](../../ALSO_CA_E7/AuthenticationContext/ALSO-Tier0%20Admins.json) and configure PIM activation separately. |
 | [BP CA107](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA107-Admins-AllApps-Windows-Grant-RequireCompliantDevice.json) | Require a compliant Windows device. |
 | [BP CA108](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA108-Admins-AllApps-MacOS-Grant-RequireCompliantDevice.json) | Require a compliant macOS device. |
 | [BP CA109](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA109-Admins-AllApps-AnyPlatform-Block-UnknownPlatforms.json) | Block platforms outside the exported platform exclusions. |
@@ -89,4 +89,4 @@ Complete Agent 365 licensing and onboarding before import. Agent identities and 
 | [A365 CA504](../../ALSO_CA_E7/ConditionalAccess/A365-ALSO-CA504-Agents-AllAgentUsers-AllResources-Block-RiskyAgents.json) | Block agent users with medium/high agent identity risk. |
 | [A365 CA505](../../ALSO_CA_E7/ConditionalAccess/A365-ALSO-CA505-Agents-AllAgentUsers-AllResources-Block-RequireCompliantNetWork.json) | Block agent users outside the compliant network location for `AllAgentIdResources`. |
 
-Continue with [How to import](how-to-import.md). For naming variations, see [Naming exceptions](naming-exceptions.md).
+Continue with [How to import](how-to-import.md).

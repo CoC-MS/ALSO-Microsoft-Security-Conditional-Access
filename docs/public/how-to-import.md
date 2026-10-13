@@ -36,7 +36,7 @@ These illustrations are retained from the existing root README. They show the sh
 
    ![Bulk menu showing Import](https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c)
 
-2. Select **Conditional Access** and **Named Locations** as needed for reviewed policies; deselect unrelated workloads. Select only the policies you intend to deploy. A365 policies are available only in `ALSO_CA_E7` and require agent prerequisites.
+2. Select **Conditional Access** and **Named Locations** as needed for reviewed policies. When importing CA106 from E5 or E7, also select **Authentication context** so `ALSO-Tier0 Admins` can be imported or mapped. Deselect unrelated workloads and select only the policies you intend to deploy. A365 policies are available only in `ALSO_CA_E7` and require agent prerequisites.
 3. Prepare required groups, locations, and authentication context before importing dependent policies, or use the tool's supported dependency-import/migration workflow. Review the source migration mappings and map every selected reference to the intended destination object.
 4. The existing guide describes **Import assignments** as affecting dependency imports. Do not assume unchecking it makes the import complete or safe: omitted groups, locations, or context can cause policy import failures. If you omit automatic dependency import, create/map those objects separately first. Review the current tool version's behavior.
 5. Explicitly choose **OFF** for Conditional Access state. Review selections and the target tenant before starting.

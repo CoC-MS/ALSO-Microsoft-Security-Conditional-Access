@@ -23,7 +23,7 @@ Administrator policies include 24 role IDs. These lists do not represent every a
 
 Prepare MFA registration and permitted authentication methods for MFA policies. CA105 and CA106 require phishing-resistant MFA; ensure targeted users have a supported method and a recovery path. CA105 excludes Microsoft Graph Command Line Tools; review whether that exception is appropriate.
 
-CA106 references the `ALSO-Tier0 Admins` authentication context (`c1`). The current packages do not include an `AuthenticationContext` export, so create or map the intended context before importing CA106, then configure the intended PIM role activation settings to request it. Importing a Conditional Access policy does not automatically attach a context to PIM roles.
+CA106 references the `ALSO-Tier0 Admins` authentication context (`c1`). The E5 and E7 packages include this export under `AuthenticationContext`. Import or map the context before CA106, then configure the intended PIM role activation settings to request it. Importing the context and Conditional Access policy does not automatically attach the context to PIM roles.
 
 For CA003, review the device setting **Require Multifactor Authentication to register or join devices with Microsoft Entra**. The existing guide calls for disabling that setting before enabling the Conditional Access replacement; plan the change without leaving a protection gap.
 
@@ -43,4 +43,4 @@ The existing guide requires an **Agent 365 licence and Agent 365 portal onboardi
 
 CA502 blocks agent identities by default, so define approved exclusions before enablement. CA503 requires compliant devices for agent users. CA505 blocks agent users outside the compliant network and targets `AllAgentIdResources`.
 
-See [Dependencies and import errors](dependencies-and-import-errors.md) for representative Graph errors and the policy-by-policy dependency matrix. Continue with the [Policy guide](conditional-access-policies.md), [Naming exceptions](naming-exceptions.md), and [How to import](how-to-import.md).
+See [Dependencies and import errors](dependencies-and-import-errors.md) for representative Graph errors and the policy-by-policy dependency matrix. Continue with the [Policy guide](conditional-access-policies.md) and [How to import](how-to-import.md).

@@ -27,6 +27,6 @@ BP-ALSO-CA105-Admins-AllApps-AnyPlatform-Grant-PhishingResistantMFA
 
 Numbers group policies by persona: global `000`, administrators `100`, internals `200`, service accounts `300`, guests `400`, and agents `500` series. E5 policies CA106, CA201, and CA210 sit within the relevant persona series; the internal mobile-compliance policy is CA211.
 
-This is a descriptive convention, not a strict schema. Some exports omit components or add client-app/management scope; spellings and capitalization vary. Policy names do not guarantee the configured application, platform, licence, or action. See [Naming exceptions](naming-exceptions.md) and inspect the JSON.
+This is a descriptive convention, not a strict schema. Some exports omit components or add client-app/management scope; spellings and capitalization vary. Policy names do not guarantee the configured application, platform, licence, or action. Inspect the JSON before deployment.
 
 Supporting groups often reuse a policy name followed by `Exclude`. Map references by object identity, not by reconstructing a filename from this convention. No names or policy assets are changed by this documentation restructure.

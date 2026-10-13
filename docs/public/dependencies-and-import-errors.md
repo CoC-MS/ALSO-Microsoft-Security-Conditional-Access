@@ -45,7 +45,7 @@ Failed to invoke MS Graph with URL https://graph.microsoft.com/beta/identity/con
 | CA006 | Configure the corresponding SharePoint Online and Exchange Online application-enforced restrictions. | Importing Conditional Access alone does not configure the service-side restrictions. |
 | CA104 and CA209 | Prepare trusted/compliant network locations, recovery access, and supported resources for strict-location CAE. | Report-only is not supported for this strict-location behavior; use a controlled ON/OFF pilot. |
 | CA105 | Register phishing-resistant authentication methods for targeted administrators. Review the Microsoft Graph Command Line Tools exclusion. | Administrators can be unable to satisfy the authentication strength. |
-| CA106 | Create or map the `ALSO-Tier0 Admins` authentication context (`c1`), configure PIM role activation to request it, and prepare phishing-resistant authentication. | Import can fail on the missing context, or the imported policy can remain unused because PIM was not configured. |
+| CA106 | Import or map the `ALSO-Tier0 Admins` authentication context (`c1`) included in the E5 and E7 packages, configure PIM role activation to request it, and prepare phishing-resistant authentication. | Import can fail on the missing context, or the imported policy can remain unused because PIM was not configured. |
 | CA200-CA211, including E5 CA201 and E5 CA210 | Import or map `ALSO- All Internals`, populate the intended membership, and map each policy exclusion group. | Import can fail on unresolved group references, or scope can be empty/incorrect. |
 | CA203 | Import/map the internal and exclusion groups. Register Microsoft Intune Enrollment manually, then replace the example Microsoft Intune application target. | Import can fail if the intended service principal is referenced before it exists; leaving the example target changes the scenario. |
 | CA205, CA208, and CA211 | Deploy and validate the corresponding Windows, macOS, iOS, or Android Intune compliance policies first. | Users cannot satisfy the compliant-device grant, or the control does not provide the intended assurance. |
@@ -94,4 +94,3 @@ When import fails:
 6. Inspect the resulting policy in Entra before enabling it.
 
 See [How to import](how-to-import.md) for the original illustrated workflow, including download, sign-in, consent, and Bulk Import screenshots. See [Conditional Access prerequisites](conditional-access-prerequisites.md) for service-specific preparation and the [Policy guide](conditional-access-policies.md) for each policy's intent.
-

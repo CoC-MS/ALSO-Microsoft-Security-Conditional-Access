@@ -66,13 +66,13 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 
 ## 📦 Conditional Access packages  
 
-Each folder is a complete export package with Conditional Access policies, supporting groups, named locations, and `MigrationTable.json`.
+Each folder is a complete export package with Conditional Access policies, supporting groups, named locations, and `MigrationTable.json`. The E5 and E7 packages also include the `ALSO-Tier0 Admins` authentication context required by CA106.
 
-| Package | Policy scope | Policies | Groups | Named locations | Total JSON files |
-| --- | --- | ---: | ---: | ---: | ---: |
-| [`ALSO_CA_BP`](ALSO_CA_BP) | 34 BP | 34 | 36 | 3 | 74 |
-| [`ALSO_CA_E5`](ALSO_CA_E5) | 34 BP + 3 E5 | 37 | 40 | 3 | 81 |
-| [`ALSO_CA_E7`](ALSO_CA_E7) | 34 BP + 3 E5 + 5 A365 | 42 | 40 | 3 | 86 |
+| Package | Policy scope | Policies | Groups | Named locations | Authentication contexts | Total JSON files |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| [`ALSO_CA_BP`](ALSO_CA_BP) | 34 BP | 34 | 36 | 3 | 0 | 74 |
+| [`ALSO_CA_E5`](ALSO_CA_E5) | 34 BP + 3 E5 | 37 | 40 | 3 | 1 | 82 |
+| [`ALSO_CA_E7`](ALSO_CA_E7) | 34 BP + 3 E5 + 5 A365 | 42 | 40 | 3 | 1 | 87 |
 
 > [!WARNING]
 > Choose **one** package per tenant. Do not combine packages; cumulative packages contain the lower-tier policies and supporting resources. Review every selected object and dependency before import.

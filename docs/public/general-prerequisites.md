@@ -17,11 +17,12 @@ These are source classifications, not a guarantee that a product name covers eve
 
 ## 🧰 Permissions and tenant preparation
 
-Use the [Microsoft Entra admin center](https://entra.microsoft.com/) to confirm the target tenant and licences. The existing import guidance requires at least the **Conditional Access Administrator** role to manage policies. Creating groups, named locations, authentication context, or service principals may require additional permissions.
 
-Have an authorized administrator review any API permissions and tenant-wide consent requested by the import tool. Conditional Access Administrator alone does not grant every dependency-creation or consent permission.
+> Ensure you have Conditional Access Administrator role before importing Conditional Access policies and that your Security defaults are turned off. To check if your tenant are using Security defaults use this direct link here:
 
-Plan the transition from **Security defaults** to Conditional Access. Security defaults must be disabled for the intended Conditional Access deployment, but do not disable existing protection without a reviewed replacement and recovery plan. Importing disabled policies does not itself protect the tenant.
+https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView/initialValue//tabId//recommendationResourceId//fromNav/Identity
+
+<img width="1559" height="197" alt="image" src="https://github.com/user-attachments/assets/b947568d-76d3-4a93-ae4a-5e293c68e59a" />
 
 ## 🧪 Deployment readiness
 

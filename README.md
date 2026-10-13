@@ -3,7 +3,7 @@
 > Microsoft Entra Conditional Access policy exports and supporting groups and named locations, helping organizations accelerate secure deployments and apply Zero Trust principles.
 
 > [!IMPORTANT]
-> These exports are starting points, not ready-made tenant configurations. Review licensing, settings, tenant-specific references, dependencies, assignments, and exclusions. **Import Conditional Access policies in OFF state** and pilot reviewed policies before expanding deployment.
+> These exports are starting points, not ready-made tenant configurations. Review licensing, settings, tenant-specific references, dependencies, assignments, and exclusions. **Import Conditional Access policies in OFF state** and pilot reviewed policies before enabling them.
 
 ---
 

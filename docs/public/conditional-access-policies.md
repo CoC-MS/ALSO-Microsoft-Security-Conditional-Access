@@ -27,7 +27,7 @@ Role targeting varies: most administrator policies contain 24 role IDs, CA103 co
 | --- | --- |
 | [BP CA100](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA100-Admins-AdminPortals-AnyPlatform-Grant-RequireMFA.json) | Multifactor authentication strength for Microsoft admin portals. |
 | [BP CA101](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA101-Admins-AllApps-AnyPlatform-Grant-RequireMFA.json) | MFA for all applications. |
-| [BP CA102](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA102-Admins-AllApps-AnyPlatform-Grant-RequireSigninFrequency4H.json) | Sign-in frequency of 4 hours; the exclusion group name still says 12H. |
+| [BP CA102](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA102-Admins-AllApps-AnyPlatform-Grant-RequireSigninFrequency4H.json) | Sign-in frequency of 4 hours |
 | [BP CA103](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA103-Admins-AllApps-AnyPlatform-Grant-DisablePersistentBrowser.json) | Persistent browser mode `never`; review the 23-role scope. |
 | [BP CA104](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA104-Admins-AllApps-AnyPlatform-Grant-CAEEnforceLocation.json) | Strict-location CAE for all applications; validate network behavior, locations, supported resources, and recovery access with an ON/OFF pilot. |
 | [BP CA105](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA105-Admins-AllApps-AnyPlatform-Grant-PhishingResistantMFA.json) | Phishing-resistant MFA; excludes Microsoft Graph Command Line Tools. |

@@ -52,7 +52,7 @@ Review the included internal-user group, exclusions, and device filters for each
 | [BP CA206](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA206-Internals-AllApps-AnyPlatform-Grant-DIsablePersistentBrowser.json) | Persistent browser mode `never`; review managed/compliant-device exclusions. |
 | [BP CA207](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA207-Internals-SelectedApps-AnyPlatform-Block-SelectedApps.json) | Block a selected application with an Office365 exclusion; replace/resolve tenant-specific application scope. |
 | [BP CA208](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA208-Internals-AllApps-MacOs-RequireCompliantDevice.json) | Require compliant macOS devices; review Microsoft Intune application exclusion. |
-| [BP CA209](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA209-Internals-AllApps-AnyPlatform-EnforceLocationCAE.json) | Strict-location CAE, not a macOS compliance policy as described in the original README; use an ON/OFF pilot. |
+| [BP CA209](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA209-Internals-AllApps-AnyPlatform-EnforceLocationCAE.json) | Strict-location CAE|
 | [E5 CA210](../../ALSO_CA_E7/ConditionalAccess/E5-ALSO-CA210-Internals-AllApps-AnyPlatform-Block-HighRiskSignIn.json) | Block high sign-in risk; confirm Entra ID Protection entitlement. |
 | [BP CA211](../../ALSO_CA_E7/ConditionalAccess/BP-ALSO-CA211-Internals-AllApps-iOSandAndroid-Grant-RequireCompliantDevice.json) | Require compliant iOS and Android devices for internal users; review the included group, exclusions, and Intune compliance prerequisites. |
 

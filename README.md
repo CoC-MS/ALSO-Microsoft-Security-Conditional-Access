@@ -5,8 +5,25 @@
 > [!IMPORTANT]
 > These exports are starting points, not ready-made tenant configurations. Review licensing, settings, tenant-specific references, dependencies, assignments, and exclusions. **Import Conditional Access policies in OFF state** and pilot reviewed policies before enabling them.
 
+<a id="getting-started"></a>
+## 🚀 Getting started
+
+1. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), [Dependencies and import errors](docs/public/dependencies-and-import-errors.md), and [Security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/security). Choose exactly one package using the licensing guide below: [`ALSO_CA_BP`](ALSO_CA_BP), [`ALSO_CA_E5`](ALSO_CA_E5), or [`ALSO_CA_E7`](ALSO_CA_E7).
+2. Follow [How to import](docs/public/how-to-import.md) for extraction and import guidance.
+
+### Quick navigation
+
+| Section | What you will find |
+| --- | --- |
+| [Getting started](#getting-started) | Prerequisites, package selection, and import guidance. |
+| [Conditional Access licensing guide](#conditional-access-licensing-guide) | License compatibility and limitations. |
+| [Conditional Access packages](#conditional-access-packages) | Compare package contents. |
+| [Conditional Access coverage](#conditional-access-coverage) | Policy coverage and capabilities. |
+| [Documentation](#documentation) | Links to supporting guides and the repository licence. |
+
 ---
 
+<a id="conditional-access-licensing-guide"></a>
 ## Conditional Access licensing guide
 
 Choose the single package that matches the tenant's licensing. The packages are cumulative: E5 includes BP policies, and E7 includes BP, E5, and Agent 365 policies.
@@ -47,23 +64,7 @@ Use [`ALSO_CA_BP`](ALSO_CA_BP) for baseline Conditional Access policies. This pa
 | Microsoft 365 F3 | ⚠️ Limited experience Excludes A365 and E5 policies |
 | Microsoft 365 F1 | ⚠️ Limited experience Excludes A365 and E5 policies |
 
----
-
-| Resource | Description |
-| --- | --- |
-| 🔐 **[Policy guide](docs/public/conditional-access-policies.md)** | Review policies by persona and their deployment caveats. |
-| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Check licensing, permissions, and deployment preparation. |
-| 🛡️ **[Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md)** | Prepare exclusions, locations, compliance, authentication, and agent dependencies. |
-| 🧩 **[Dependencies and import errors](docs/public/dependencies-and-import-errors.md)** | Review required tenant objects, representative Graph errors, and CA203 service-principal registration. |
-| 📖 **[Policy naming](docs/public/policy-naming.md)** | Understand licence tags, policy numbers, and personas. |
-| 📂 **[File structure](docs/public/file-structure.md)** | Compare packages and find policy exports and supporting resources. |
-| 📥 **[How to import](docs/public/how-to-import.md)** | Import one reviewed package, then validate in Entra. |
-| 🐛 **[Reporting issues](docs/public/reporting-issues.md)** | Report problems without disclosing tenant information. |
-| 🛡️ **[Security information](Security.md)** | Read deployment responsibilities and the usage notice. |
-| 📜 **[License](LICENSE)** | Read the repository licence. |
-
----
-
+<a id="conditional-access-packages"></a>
 ## 📦 Conditional Access packages  
 
 Each folder is a complete export package with Conditional Access policies, supporting groups, named locations, and `MigrationTable.json`. The E5 and E7 packages also include the `ALSO-Tier0 Admins` authentication context required by CA106.
@@ -77,6 +78,7 @@ Each folder is a complete export package with Conditional Access policies, suppo
 > [!WARNING]
 > Choose **one** package per tenant. Do not combine packages; cumulative packages contain the lower-tier policies and supporting resources. Review every selected object and dependency before import.
 
+<a id="conditional-access-coverage"></a>
 ## 🌐 Conditional Access coverage
 
 | Persona | Policy series | Included scenarios |
@@ -100,10 +102,18 @@ Each folder is a complete export package with Conditional Access policies, suppo
 
 ---
 
-## 🚀 Getting started
+<a id="documentation"></a>
+## 📚 Documentation
 
-1. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), [Dependencies and import errors](docs/public/dependencies-and-import-errors.md), and this repository's [GitHub Security overview](https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/security). Then use the licensing guide above to choose **exactly one** package:
-   - [`ALSO_CA_BP`](ALSO_CA_BP)
-   - [`ALSO_CA_E5`](ALSO_CA_E5)
-   - [`ALSO_CA_E7`](ALSO_CA_E7)
-2. Follow [How to import](docs/public/how-to-import.md) for download, extraction, and import guidance. Import Conditional Access policies in **OFF** state and keep them OFF until they are ready for a controlled pilot.
+| Resource | Description |
+| --- | --- |
+| 🔐 **[Policy guide](docs/public/conditional-access-policies.md)** | Review policies by persona and their deployment caveats. |
+| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Check licensing, permissions, and deployment preparation. |
+| 🛡️ **[Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md)** | Prepare exclusions, locations, compliance, authentication, and agent dependencies. |
+| 🧩 **[Dependencies and import errors](docs/public/dependencies-and-import-errors.md)** | Review required tenant objects, representative Graph errors, and CA203 service-principal registration. |
+| 📖 **[Policy naming](docs/public/policy-naming.md)** | Understand licence tags, policy numbers, and personas. |
+| 📂 **[File structure](docs/public/file-structure.md)** | Compare packages and find policy exports and supporting resources. |
+| 📥 **[How to import](docs/public/how-to-import.md)** | Import one reviewed package, then validate in Entra. |
+| 🐛 **[Reporting issues](docs/public/reporting-issues.md)** | Report problems without disclosing tenant information. |
+| 🛡️ **[Security information](Security.md)** | Read deployment responsibilities and the usage notice. |
+| 📜 **[License](LICENSE)** | Read the repository licence. |

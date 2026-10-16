@@ -19,7 +19,7 @@
 | [Conditional Access licensing guide](#conditional-access-licensing-guide) | License compatibility and limitations. |
 | [Conditional Access packages](#conditional-access-packages) | Compare package contents. |
 | [Conditional Access coverage](#conditional-access-coverage) | Policy coverage and capabilities. |
-| [Documentation](#documentation) | Links to supporting guides and the repository licence. |
+| [Documentation](#documentation) | Links to supporting guides and the repository licence. | 
 
 ---
 

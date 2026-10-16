@@ -102,7 +102,8 @@ Each folder is a complete export package with Conditional Access policies, suppo
 
 ## 🚀 Getting started
 
-1. Choose one package using the licensing guide above and [File structure](docs/public/file-structure.md).
-2. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), [Dependencies and import errors](docs/public/dependencies-and-import-errors.md), and [Security information](Security.md).
-3. Select and review policies using the [Policy guide](docs/public/conditional-access-policies.md).
-4. Follow [How to import](docs/public/how-to-import.md), keeping policies OFF until they are ready for a controlled pilot.
+1. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), [Dependencies and import errors](docs/public/dependencies-and-import-errors.md), and this repository's [GitHub Security overview](https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/security). Then use the licensing guide above to choose **exactly one** package:
+   - [`ALSO_CA_BP`](ALSO_CA_BP)
+   - [`ALSO_CA_E5`](ALSO_CA_E5)
+   - [`ALSO_CA_E7`](ALSO_CA_E7)
+2. Follow [How to import](docs/public/how-to-import.md) for download, extraction, and import guidance. Import Conditional Access policies in **OFF** state and keep them OFF until they are ready for a controlled pilot.

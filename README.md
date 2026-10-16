@@ -8,8 +8,10 @@
 <a id="getting-started"></a>
 ## 🚀 Getting started
 
-1. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), [Dependencies and import errors](docs/public/dependencies-and-import-errors.md), and [Security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/security). Choose exactly one package using the licensing guide below: [`ALSO_CA_BP`](ALSO_CA_BP), [`ALSO_CA_E5`](ALSO_CA_E5), or [`ALSO_CA_E7`](ALSO_CA_E7).
-2. Follow [How to import](docs/public/how-to-import.md) for extraction and import guidance.
+1. Review [General prerequisites](docs/public/general-prerequisites.md), [Conditional Access prerequisites](docs/public/conditional-access-prerequisites.md), [Dependencies and import errors](docs/public/dependencies-and-import-errors.md), and [Security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-Conditional-Access/security).
+2. Choose exactly one package using the licensing guide below: [`ALSO_CA_BP`](ALSO_CA_BP), [`ALSO_CA_E5`](ALSO_CA_E5), or [`ALSO_CA_E7`](ALSO_CA_E7).
+3. Follow [How to import](docs/public/how-to-import.md) for extraction and import guidance.
+4. Assign reviewed policies to a pilot group, check policy deployment reports and user impact, then expand in stages.
 
 ### Quick navigation
 

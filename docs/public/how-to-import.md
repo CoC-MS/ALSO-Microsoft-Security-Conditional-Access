@@ -16,7 +16,7 @@ Complete [General prerequisites](general-prerequisites.md), [Conditional Access 
 https://github.com/user-attachments/assets/88e2ba12-e3d2-41fa-a1ec-5ff9bc2fea42
 
 
-## Download and sign in
+## How to get started and how to import step by step
 
 1.Download and extract it to Onedrive location the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManagement) 
 
@@ -41,14 +41,15 @@ https://github.com/user-attachments/assets/88e2ba12-e3d2-41fa-a1ec-5ff9bc2fea42
 
    ![Bulk menu showing Import](https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c)
 
-2. Select **Conditional Access** and **Named Locations** as needed for reviewed policies. When importing CA106 from E5 or E7, also select **Authentication context** so `ALSO-Tier0 Admins` can be imported or mapped. Deselect unrelated workloads and select only the policies you intend to deploy. A365 policies are available only in `ALSO_CA_E7` and require agent prerequisites.
+2. Select at least  **Conditional Access** and  **Named Locations**  . When importing CA106 from E5 or E7, also select **Authentication context** so `ALSO-Tier0 Admins` can be imported or mapped. Deselect unrelated workloads and select only the policies you intend to deploy. A365 and E5 policies are available only in `ALSO_CA_E7` and require Agent 365 license and prerequisites + Entra P2 for E5 policies.
 
-PS: You can also use Conditional Access windows to import Conditional Access policies ONLY. But have in mind that some policies will fail on imprrt if they require Named Locations and Authentication Context. 
+3. Deselect Import assignments if you don't want to import included Exclusion groups for Break Glass Accounts, Internals etc.
+4. Deselect replace dependency ID's if you don't wish to replace them. Read more info in the tool 
 
-4. Prepare required groups, locations, and authentication context before importing dependent policies, or use the tool's supported dependency-import/migration workflow. Review the source migration mappings and map every selected reference to the intended destination object.
-5. The existing guide describes **Import assignments** as affecting dependency imports. Do not assume unchecking it makes the import complete or safe: omitted groups, locations, or context can cause policy import failures. If you omit automatic dependency import, create/map those objects separately first. Review the current tool version's behavior.
-6. Explicitly choose **OFF** for Conditional Access state. Review selections and the target tenant before starting.
-7. Inspect tool results and command-window output for failures. Missing references, app/service principals, consent, or Agent 365 readiness must be resolved rather than ignored. Use the representative errors and policy dependency matrix in [Dependencies and import errors](dependencies-and-import-errors.md). Inspect the resulting objects in Entra and confirm all imported policies are disabled.
+PS: You can also use Conditional Access windows to import Conditional Access policies ONLY. But have in mind that some policies will fail on imprrt if they require Named Locations and Authentication Context to be imported. Check policy documentation to get full overview. 
+
+5. Choose **OFF** for Conditional Access state (default on OFF usually). 
+8. Inspect tool results and command-window output for failures. Missing references, app/service principals, consent, or Agent 365 readiness must be resolved rather than ignored. Use the representative errors and policy dependency matrix in [Dependencies and import errors](dependencies-and-import-errors.md). Inspect the resulting objects in Entra and confirm all imported policies are disabled.
 
 ## Review, pilot, and enable
 

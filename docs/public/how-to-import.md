@@ -10,13 +10,13 @@ Complete [General prerequisites](general-prerequisites.md), [Conditional Access 
 
 ## Watch the video tutorial or read how to import below
 
-## 🎥 Video Demo
+## 🎥 Full video tutorial on how to get started and how to import step by step
 
 
 https://github.com/user-attachments/assets/88e2ba12-e3d2-41fa-a1ec-5ff9bc2fea42
 
 
-## How to get started and how to import step by step
+## Full written tutorial on how to get started and how to import step by step
 
 1.Download and extract it to Onedrive location the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManagement) 
 

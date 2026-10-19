@@ -4,7 +4,6 @@
 
 Complete [General prerequisites](general-prerequisites.md), [Conditional Access prerequisites](conditional-access-prerequisites.md), [Dependencies and import errors](dependencies-and-import-errors.md), and the review of selected policies in the [Policy guide](conditional-access-policies.md).
 
-Use the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManagement) as described in the existing repository guide. Follow its current setup and authentication instructions; UI labels and dependency handling may vary by version.
 
 > [!WARNING]
 > **Set Conditional Access state to OFF during import.** Do not bulk-enable policies or assume their source disabled state is preserved by every import workflow.
@@ -19,36 +18,37 @@ https://github.com/user-attachments/assets/88e2ba12-e3d2-41fa-a1ec-5ff9bc2fea42
 
 ## Download and sign in
 
-1. Use the [licensing guide](../../README.md#conditional-access-licensing-guide) to choose exactly one package: `ALSO_CA_BP`, `ALSO_CA_E5`, or `ALSO_CA_E7`.
-2. Download the repository with **Code > Download ZIP** and extract it to a short path. Verify all long filenames were extracted. Keep the selected package and its migration metadata together.
+1.Download and extract it to Onedrive location the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManagement) 
+
+2. Download this repository with **Code > Download ZIP** on main page and extract it to a Onedrive location
 
    ![GitHub Code menu showing Download ZIP](https://github.com/user-attachments/assets/b4005205-abc8-4e9b-a8b0-d6f919f99c06)
 
-3. Download and extract the tool. On Windows, launch `start.cmd` from its folder.
+2. Use the [licensing guide](../../README.md#conditional-access-licensing-guide) to choose exactly one package: `ALSO_CA_BP`, `ALSO_CA_E5`, or `ALSO_CA_E7`.
 
-   ![Intune Management Tool folder with start.cmd](https://github.com/user-attachments/assets/ae7405c2-17cb-43a1-a96e-cd60181a2619)
-
-4. Select the sign-in icon in the upper-right corner. Sign in with authorized permissions and confirm the destination tenant.
+5. Select the sign-in icon in the upper-right corner. Sign in with authorized permissions and confirm the destination tenant.
 
    ![Import tool sign-in icon](https://github.com/user-attachments/assets/2e835f79-5e07-4c7d-bd7c-5bd4976fde50)
 
-5. If API consent is required, have an authorized administrator review the requested permissions and use **Request Consent** according to the tool's current instructions.
+6. If API consent is required, have an Global Administrator to consent to required API permissions used by the app
 
    ![Sign-in menu showing Request Consent](https://github.com/user-attachments/assets/675ebdc9-dc87-4633-bfa5-fbb92f7ba53d)
 
-These illustrations are retained from the existing root README. They show the shared tool workflow, not a promise of the exact current UI.
 
 ## Import selected Conditional Access resources
 
-1. Select **Bulk > Import** and point the workflow at the selected `ALSO_CA_BP`, `ALSO_CA_E5`, or `ALSO_CA_E7` package, not at the repository root or `docs/public`.
+1. Select **Bulk > Import** and point the workflow at the selected `ALSO_CA_BP`, `ALSO_CA_E5`, or `ALSO_CA_E7` package, not at the repository root folder
 
    ![Bulk menu showing Import](https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c)
 
 2. Select **Conditional Access** and **Named Locations** as needed for reviewed policies. When importing CA106 from E5 or E7, also select **Authentication context** so `ALSO-Tier0 Admins` can be imported or mapped. Deselect unrelated workloads and select only the policies you intend to deploy. A365 policies are available only in `ALSO_CA_E7` and require agent prerequisites.
-3. Prepare required groups, locations, and authentication context before importing dependent policies, or use the tool's supported dependency-import/migration workflow. Review the source migration mappings and map every selected reference to the intended destination object.
-4. The existing guide describes **Import assignments** as affecting dependency imports. Do not assume unchecking it makes the import complete or safe: omitted groups, locations, or context can cause policy import failures. If you omit automatic dependency import, create/map those objects separately first. Review the current tool version's behavior.
-5. Explicitly choose **OFF** for Conditional Access state. Review selections and the target tenant before starting.
-6. Inspect tool results and command-window output for failures. Missing references, app/service principals, consent, or Agent 365 readiness must be resolved rather than ignored. Use the representative errors and policy dependency matrix in [Dependencies and import errors](dependencies-and-import-errors.md). Inspect the resulting objects in Entra and confirm all imported policies are disabled.
+
+PS: You can also use Conditional Access windows to import Conditional Access policies ONLY. But have in mind that some policies will fail on imprrt if they require Named Locations and Authentication Context. 
+
+4. Prepare required groups, locations, and authentication context before importing dependent policies, or use the tool's supported dependency-import/migration workflow. Review the source migration mappings and map every selected reference to the intended destination object.
+5. The existing guide describes **Import assignments** as affecting dependency imports. Do not assume unchecking it makes the import complete or safe: omitted groups, locations, or context can cause policy import failures. If you omit automatic dependency import, create/map those objects separately first. Review the current tool version's behavior.
+6. Explicitly choose **OFF** for Conditional Access state. Review selections and the target tenant before starting.
+7. Inspect tool results and command-window output for failures. Missing references, app/service principals, consent, or Agent 365 readiness must be resolved rather than ignored. Use the representative errors and policy dependency matrix in [Dependencies and import errors](dependencies-and-import-errors.md). Inspect the resulting objects in Entra and confirm all imported policies are disabled.
 
 ## Review, pilot, and enable
 

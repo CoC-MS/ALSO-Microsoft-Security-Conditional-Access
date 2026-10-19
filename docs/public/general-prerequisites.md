@@ -21,7 +21,8 @@ Choose `ALSO_CA_BP` for BP policies, `ALSO_CA_E5` for BP and E5 policies, or `AL
 
 https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView/initialValue//tabId//recommendationResourceId//fromNav/Identity
 
-<img width="1559" height="197" alt="image" src="https://github.com/user-attachments/assets/b947568d-76d3-4a93-ae4a-5e293c68e59a" />
+<img width="1913" height="954" alt="image" src="https://github.com/user-attachments/assets/bf17814a-ab3a-4a48-a917-69408977ac07" />
+
 
 ## 🧪 Deployment readiness
 

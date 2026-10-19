@@ -23,7 +23,9 @@ https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView/ini
 
 <img width="1913" height="954" alt="image" src="https://github.com/user-attachments/assets/bf17814a-ab3a-4a48-a917-69408977ac07" />
 
-If you don't see this option, it should say that "Your organization are currently using Conditional Access" 
+If you don't see this option, you should see the message: "Your organization is currently using Conditional Access."
+
+If you're unable to switch it off, your tenant does not have an Entra ID P1 license.
 
 ## 🧪 Deployment readiness
 

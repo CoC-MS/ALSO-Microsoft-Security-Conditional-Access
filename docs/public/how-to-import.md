@@ -46,7 +46,8 @@ https://github.com/user-attachments/assets/88e2ba12-e3d2-41fa-a1ec-5ff9bc2fea42
 3. Deselect Import assignments if you don't want to import included Exclusion groups for Break Glass Accounts, Internals etc.
 4. Deselect replace dependency ID's if you don't wish to replace them. Read more info in the tool 
 
-PS: You can also use Conditional Access windows to import Conditional Access policies ONLY. But have in mind that some policies will fail on imprrt if they require Named Locations and Authentication Context to be imported. Check policy documentation to get full overview. 
+> [!WARNING]
+> **You can also use the Conditional Access wizard to import only Conditional Access policies. However, keep in mind that some policies may fail during import if they depend on Named Locations or Authentication Contexts. Please review the policy documentation for a complete overview of any prerequisites and requirements.**
 
 5. Choose **OFF** for Conditional Access state (default on OFF usually). 
 8. Inspect tool results and command-window output for failures. Missing references, app/service principals, consent, or Agent 365 readiness must be resolved rather than ignored. Use the representative errors and policy dependency matrix in [Dependencies and import errors](dependencies-and-import-errors.md). Inspect the resulting objects in Entra and confirm all imported policies are disabled.

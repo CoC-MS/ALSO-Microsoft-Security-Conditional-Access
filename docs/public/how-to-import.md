@@ -8,7 +8,6 @@ Complete [General prerequisites](general-prerequisites.md), [Conditional Access 
 > [!WARNING]
 > **Set Conditional Access state to OFF during import.** Do not bulk-enable policies or assume their source disabled state is preserved by every import workflow.
 
-## Watch the video tutorial or read how to import below
 
 ## 🎥 Full video tutorial on how to get started and how to import step by step
 

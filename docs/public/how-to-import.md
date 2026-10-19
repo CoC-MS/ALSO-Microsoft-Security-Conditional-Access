@@ -9,6 +9,13 @@ Use the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManage
 > [!WARNING]
 > **Set Conditional Access state to OFF during import.** Do not bulk-enable policies or assume their source disabled state is preserved by every import workflow.
 
+## Watch the video tutorial or read how to import below
+
+## 🎥 Video Demo
+
+[![Watch Video](https://img.shields.io/badge/▶-Watch%20Video-blue?style=for-the-badge)](https://also-my.sharepoint.com/:v:/p/vladislav_johansen/IQBb5Kfufp8oQZbh-CtvSQyvAULlRt4dMeUDzZ_KX1jCVMc?e=bKuXKJ)
+``
+
 ## Download and sign in
 
 1. Use the [licensing guide](../../README.md#conditional-access-licensing-guide) to choose exactly one package: `ALSO_CA_BP`, `ALSO_CA_E5`, or `ALSO_CA_E7`.

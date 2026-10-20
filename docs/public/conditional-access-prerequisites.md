@@ -1,11 +1,5 @@
 # 🛡️ Conditional Access prerequisites
 
-**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
-
-**Enterprise licenses:** [Microsoft Enterprise Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
-
-**SMB licenses:** [Microsoft SMB Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
-
 [Public documentation](README.md)
 
 Complete [General prerequisites](general-prerequisites.md), then review the dependencies for each selected policy. Names alone are not a configuration specification.
@@ -50,3 +44,9 @@ The existing guide requires an **Agent 365 licence and Agent 365 portal onboardi
 CA502 blocks agent identities by default, so define approved exclusions before enablement. CA503 requires compliant devices for agent users. CA505 blocks agent users outside the compliant network and targets `AllAgentIdResources`.
 
 See [Dependencies and import errors](dependencies-and-import-errors.md) for representative Graph errors and the policy-by-policy dependency matrix. Continue with the [Policy guide](conditional-access-policies.md) and [How to import](how-to-import.md).
+
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
+**Enterprise licenses:** [Microsoft Enterprise Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
+
+**SMB licenses:** [Microsoft SMB Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)

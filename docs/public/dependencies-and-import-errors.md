@@ -1,11 +1,5 @@
 # 🧩 Dependencies and import errors
 
-**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
-
-**Enterprise licenses:** [Microsoft Enterprise Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
-
-**SMB licenses:** [Microsoft SMB Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
-
 [Public documentation](README.md)
 
 Many Conditional Access exports reference tenant objects or services that must already exist, be imported with the policy, or be mapped through `MigrationTable.json`. A policy can fail to import even when its JSON is valid if a referenced group, named location, authentication context, application, or service capability is missing.
@@ -99,3 +93,9 @@ When import fails:
 6. Inspect the resulting policy in Entra before enabling it.
 
 See [How to import](how-to-import.md) for the original illustrated workflow, including download, sign-in, consent, and Bulk Import screenshots. See [Conditional Access prerequisites](conditional-access-prerequisites.md) for service-specific preparation and the [Policy guide](conditional-access-policies.md) for each policy's intent.
+
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
+**Enterprise licenses:** [Microsoft Enterprise Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)
+
+**SMB licenses:** [Microsoft SMB Plan Comparison](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/Modern-Work-Plan-Comparison-Enterprise.pdf)

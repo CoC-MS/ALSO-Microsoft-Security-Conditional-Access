@@ -1,5 +1,7 @@
 # 🛡️ Conditional Access prerequisites
 
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
 [Public documentation](README.md)
 
 Complete [General prerequisites](general-prerequisites.md), then review the dependencies for each selected policy. Names alone are not a configuration specification.

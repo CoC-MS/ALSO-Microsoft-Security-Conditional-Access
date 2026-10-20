@@ -1,5 +1,7 @@
 # 📥 How to import
 
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
 [Public documentation](README.md)
 
 Complete [General prerequisites](general-prerequisites.md), [Conditional Access prerequisites](conditional-access-prerequisites.md), [Dependencies and import errors](dependencies-and-import-errors.md), and the review of selected policies in the [Policy guide](conditional-access-policies.md).

@@ -1,5 +1,7 @@
 # 🔐 Conditional Access policy guide
 
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
 [Public documentation](README.md)
 
 This guide summarizes the 42 policies in the complete `ALSO_CA_E7` package by policy number. Links use that package as the canonical full set; BP policies are also present in `ALSO_CA_BP` and `ALSO_CA_E5`, while E5 policies are also present in `ALSO_CA_E5`. Read the complete conditions and controls before use; names describe intent, but settings determine behavior.

@@ -1,5 +1,7 @@
 # 🧩 Dependencies and import errors
 
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
 [Public documentation](README.md)
 
 Many Conditional Access exports reference tenant objects or services that must already exist, be imported with the policy, or be mapped through `MigrationTable.json`. A policy can fail to import even when its JSON is valid if a referenced group, named location, authentication context, application, or service capability is missing.

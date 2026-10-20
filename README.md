@@ -1,5 +1,7 @@
 # 🛡️ ALSO Microsoft Security - Conditional Access
 
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
 > Microsoft Entra Conditional Access policy exports and supporting groups and named locations, helping organizations accelerate secure deployments and apply Zero Trust principles.
 
 > [!IMPORTANT]
